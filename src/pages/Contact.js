@@ -6,9 +6,11 @@ const Contact = () => {
     <div className="contact container">
       <h1>Let's Connect</h1>
       <p className="contact-intro">
-        I'm always interested in hearing about new opportunities, collaborative 
-        projects, and conversations about design systems and accessibility. 
-        Feel free to reach out!
+        I'm open to senior and staff-level roles in design systems governance, 
+        production interface design, and enterprise UX, remote preferred. I'm 
+        also available for contract work in design system audits, governance 
+        consulting, and AI training data (UI/UX specialist track). Reach out 
+        and let's talk.
       </p>
 
       <div className="contact-links">

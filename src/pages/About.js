@@ -3,14 +3,16 @@ import { Download } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    'Design Systems & Governance',
-    'UI/UX Strategy (Web, Mobile)',
-    'Accessibility (WCAG)',
-    'React & Vue',
-    'Figma & Adobe CC',
-    'UX Research & Prototyping',
-    'Agile Collaboration',
-    'Stakeholder Alignment'
+    'Design Systems Governance and Stewardship',
+    'System Boundaries, Guardrails and Contribution Frameworks',
+    'Organizational Influence Without Direct Authority',
+    'Production Interface Design (Web, Mobile, Multi-Platform)',
+    'Figma (Expert) and Adobe Creative Suite',
+    'Accessibility and Inclusive Design (WCAG AA)',
+    'Engineering Collaboration and High-Fidelity Handoff',
+    'UX Research, Workflow Documentation and Design Rationale',
+    'Prototyping (Low to High Fidelity, Smart Animate)',
+    'Stakeholder Presentation and Executive Communication'
   ];
 
   const experience = [
@@ -20,6 +22,7 @@ const About = () => {
       period: 'Apr 2024 – Present',
       highlights: [
         'Unified three companies under a single design system, delivering 60+ KendoReact components and a feature-rich data grid',
+        'Operating as staff-level design leader across multi-stream initiatives, connecting system decisions to business outcomes and holding standards under pressure across product, marketing, engineering, and external agency partners',
         'Established parity between Figma, ThemeBuilder, and Storybook, reducing design–dev churn and improving consistency',
         'Partnered with engineering to optimize workflows, cutting implementation time by 50%',
         'Applied WCAG AA compliance across 10+ components, significantly improving accessibility',
@@ -60,18 +63,30 @@ const About = () => {
     <div className="about container">
       <h1>About Me</h1>
       <p className="about-subtitle">
-        Senior UX/UI Designer  |  Design Systems Lead  |  Accessibility Advocate
+        Staff UX/UI Designer  ·  Design Systems Governance, Organizational Influence & Production Interface Design
       </p>
 
       <p>
-        With 8+ years of experience, I create scalable, multi-platform digital experiences 
-        that unify design and development. I specialize in building design systems that 
-        accelerate development velocity while maintaining accessibility and brand consistency.
+        I specialize in the kind of design work that holds organizations together: 
+        building the systems, standards, and governance frameworks that let teams move 
+        fast without losing quality or coherence. My career has been defined by 
+        operating at the intersection of design craft and organizational influence, 
+        making the right design decisions and then making sure they actually stick.
       </p>
       <p>
-        Currently leading design system initiatives at Wheels, Inc., where I've unified 
-        three companies under a single design ecosystem, delivering 60+ components and 
-        cutting implementation time by 50%.
+        At Wheels, Inc., I govern a design system that unifies three merged companies 
+        under a single visual and interaction language across web and mobile. That means 
+        owning the component library, defining the guardrails, writing the documentation, 
+        and stepping in, with principled rationale, when teams diverge from the system. 
+        It also means navigating high-stakes conversations with product, engineering, 
+        marketing, and external partners on a daily basis.
+      </p>
+      <p>
+        I hold an MA in Graphic and Web Design from the Minneapolis College of Art and 
+        Design, which sharpened a craft foundation I had been building since 2016 across 
+        financial tools, nonprofit digital products, fleet management platforms, and 
+        enterprise SaaS. I am at my best in roles where design quality is non-negotiable 
+        and systems thinking is the mechanism for delivering it at scale.
       </p>
       
       <a 
