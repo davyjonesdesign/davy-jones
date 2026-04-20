@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div className="landing container">
       <div className="landing-hero">
-        <h1>Building Design Systems That Scale</h1>
+        <h1>Design Systems That Hold the Organization Together</h1>
         <p className="landing-intro">
-          Senior UX/UI Designer with 8+ years bridging design and development. 
-          I create accessible, scalable design systems that accelerate teams and 
-          unify digital experiences across platforms.
+          Staff-level UX/UI Designer with 8+ years governing enterprise design systems, 
+          shipping production interfaces, and setting the quality bar across 
+          cross-functional organizations. Based in Valparaiso, IN, open to remote.
         </p>
         <div className="landing-cta">
           <Link to="/work" className="btn btn-primary">
@@ -23,29 +23,32 @@ const Home = () => {
 
       <div className="landing-highlights">
         <div className="highlight-card">
-          <span className="highlight-stat">50%</span>
-          <h3>Faster Implementation</h3>
+          <span className="highlight-stat">3 → 1</span>
+          <h3>Companies Unified</h3>
           <p>
-            Cut developer implementation time in half through systematic 
-            component documentation and reusable design patterns.
+            Governed a design system merging three organizations, Wheels, 
+            Donlen, and LeasePlan USA, under a single visual and interaction 
+            language across web and mobile.
           </p>
         </div>
 
         <div className="highlight-card">
           <span className="highlight-stat">60+</span>
-          <h3>Components Delivered</h3>
+          <h3>Production Components</h3>
           <p>
-            Built comprehensive KendoReact design system unifying three 
-            merged companies under a single design language.
+            Built and maintained a KendoReact + Figma component library 
+            from scratch, creating a single source of truth that reduced 
+            design-dev churn across multiple engineering teams.
           </p>
         </div>
 
         <div className="highlight-card">
-          <span className="highlight-stat">WCAG AA</span>
-          <h3>Accessibility First</h3>
+          <span className="highlight-stat">Staff</span>
+          <h3>Level Influence</h3>
           <p>
-            Achieved WCAG AA compliance across 10+ core components, 
-            embedding accessibility into every design decision.
+            Operating without direct authority across product, engineering, 
+            marketing, and external agencies, holding design standards through 
+            principled rationale, documentation, and credibility.
           </p>
         </div>
       </div>
