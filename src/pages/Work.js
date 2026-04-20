@@ -17,7 +17,7 @@ const Work = () => {
             <div className="project-thumbnail">
               <img 
                 src={project.mainImg} 
-                alt={project.title}
+                alt={`${project.title} - ${project.subtitle || 'project screenshot'}`}
               />
             </div>
             <article className="project-content">

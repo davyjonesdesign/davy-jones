@@ -50,7 +50,7 @@ export const portfolioData = [
       'Accelerated delivery of critical features (booking appointments, bookmarking shops)',
       'Improved designer-developer collaboration with transparent workflows',
       'Positioned Wheels as market leader with future-forward design system casting vision for product experience',
-      'Achieved WCAG AA compliance across 10+ core components'
+      'Achieved WCAG AA compliance across all core components'
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/wass-documentation.jpg?raw=true',

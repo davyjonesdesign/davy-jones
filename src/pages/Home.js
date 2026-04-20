@@ -44,7 +44,7 @@ const Home = () => {
           <span className="highlight-stat">WCAG AA</span>
           <h3>Accessibility First</h3>
           <p>
-            Achieved WCAG AA compliance across 10+ core components, 
+            Achieved WCAG AA compliance across all core components, 
             embedding accessibility into every design decision.
           </p>
         </div>

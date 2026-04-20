@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
+import ImageWithSkeleton from '../components/ImageWithSkeleton';
 
 const ProjectDetail = () => {
   const { alias } = useParams();
@@ -45,7 +46,7 @@ const ProjectDetail = () => {
         {/* Hero Image */}
         {project.mainImg && (
           <div>
-            <img 
+            <ImageWithSkeleton 
               src={project.mainImg} 
               alt={project.title}
               className="project-hero-image"
@@ -96,7 +97,7 @@ const ProjectDetail = () => {
               {/* Overview Image/Frame */}
               {project.overviewImg && (
                 <div>
-                  <img 
+                  <ImageWithSkeleton 
                     src={project.overviewImg} 
                     alt="Overview"
                     className="project-section-image"
@@ -154,7 +155,7 @@ const ProjectDetail = () => {
               {/* Overview Image (for Wheels project) */}
               {project.overviewImg && (
                 <div>
-                  <img 
+                  <ImageWithSkeleton 
                     src={project.overviewImg} 
                     alt="Overview"
                     className="project-section-image"
@@ -183,7 +184,7 @@ const ProjectDetail = () => {
               {/* Method Image/Frame */}
               {project.methodImg && (
                 <div>
-                  <img 
+                  <ImageWithSkeleton 
                     src={project.methodImg} 
                     alt="Method"
                     className="project-section-image"
@@ -226,7 +227,7 @@ const ProjectDetail = () => {
               {/* Method Image (for Wheels showing implementation) */}
               {project.methodImg && (
                 <div>
-                  <img 
+                  <ImageWithSkeleton 
                     src={project.methodImg} 
                     alt="Implementation"
                     className="project-section-image"
@@ -240,7 +241,7 @@ const ProjectDetail = () => {
               {/* Outcome Image */}
               {project.outcomeImg && (
                 <div>
-                  <img 
+                  <ImageWithSkeleton 
                     src={project.outcomeImg} 
                     alt="Impact"
                     className="project-section-image"
@@ -269,7 +270,7 @@ const ProjectDetail = () => {
               {/* Outcome Image/Frame */}
               {project.outcomeImg && (
                 <div>
-                  <img 
+                  <ImageWithSkeleton 
                     src={project.outcomeImg} 
                     alt="Outcome"
                     className="project-section-image"

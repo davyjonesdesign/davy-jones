@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Linkedin, ExternalLink } from 'lucide-react';
+import React from 'react'; 
+import { Mail, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -19,7 +19,7 @@ const Contact = () => {
           <Mail size={24} />
           <div>
             <strong>Email</strong>
-            <p style={{margin: 0, fontSize: '0.875rem', color: '#6b7280'}}>dmjones.me@gmail.com</p>
+            <p style={{margin: 0, fontSize: '0.875rem', color: 'var(--color-text-tertiary)'}}>dmjones.me@gmail.com</p>
           </div>
         </a>
 
@@ -32,7 +32,7 @@ const Contact = () => {
           <Linkedin size={24} />
           <div>
             <strong>LinkedIn</strong>
-            <p style={{margin: 0, fontSize: '0.875rem', color: '#6b7280'}}>linkedin.com/in/dmjonesme</p>
+            <p style={{margin: 0, fontSize: '0.875rem', color: 'var(--color-text-tertiary)'}}>linkedin.com/in/dmjonesme</p>
           </div>
         </a>
       </div>
