@@ -19,13 +19,14 @@ export const portfolioData = [
 
     // Recruiter-focused structure
     challenge:
-      'After merging three companies (Wheels, Donlen, and LeasePlan USA), the organization faced fragmented design languages, inconsistent UI across platforms, and accessibility issues. Color semantics were confusing (orange for actions vs. warnings), and designers and developers worked in silos, causing inefficiencies and post-production bugs. To maintain market leadership and launch a major client-facing product within the year, a unified, scalable design system was essential.',
+      'After the merger of Wheels, Donlen, and LeasePlan USA, the organization faced fragmented design languages, inconsistent UI across platforms, and a governance vacuum, no shared standards, no clear system ownership, and no framework for deciding when teams could deviate from established patterns. Designers and developers worked in silos, accessibility was inconsistent, and color semantics were actively confusing (orange used for both actions and warnings). Launching a major client-facing product within the year required not just a new component library, but an organizational governance model that would hold across competing priorities and timelines.',
 
     myRole: [
-      'Design System Lead: Owned theming, governance, and hands-on implementation across 3-4 designers and the UI development principal',
-      'Bridge between design and engineering: Ensured 1:1 parity between Figma, ThemeBuilder, and Storybook',
-      'Strategic decision-maker: Defined component patterns, workflows, and accessibility standards (WCAG compliance)',
-      'Mentor: Guided designers through Figma migration and system adoption, fostering design-thinking culture'
+      'Design System Governor: Owned system integrity, boundaries, and evolution across design, engineering, marketing, and external agency partners',
+      'Governance Model Author: Defined where flexibility was allowed and where it was not, and held that line through principled, documented design rationale',
+      'Bridge between design and engineering: Ensured 1:1 parity between Figma, ThemeBuilder, and Storybook across KendoReact and React Native Paper',
+      'Documentation Lead: Translated system intent into usage principles, decision frameworks, and contribution guidelines teams could follow independently',
+      'Mentor and culture builder: Guided designers through Figma migration and system adoption, raising UX maturity across the organization'
     ],
 
     approaches: [
@@ -44,13 +45,12 @@ export const portfolioData = [
     methodCap: 'ThemeBuilder implementation ensuring design-development parity',
 
     impact: [
-      'Cut developer implementation time by 50% through clear component documentation and reusable patterns',
-      'Unified visual language across Renewals, FleetView, and DriverView products',
-      'Reduced design-dev churn and post-production bugs through upfront system alignment',
-      'Accelerated delivery of critical features (booking appointments, bookmarking shops)',
-      'Improved designer-developer collaboration with transparent workflows',
-      'Positioned Wheels as market leader with future-forward design system casting vision for product experience',
-      'Achieved WCAG AA compliance across all core components'
+      'Unified three merged companies under a single design language, governing coherence across Renewals, FleetView, and DriverView without losing the distinct needs of each product area',
+      'Cut developer implementation time by 50% through systematic component documentation and reusable patterns that reduced repeated decision-making',
+      'Established governance model defining system boundaries, contribution workflows, and review processes, reducing off-system divergence across product, marketing, and external teams',
+      'Achieved WCAG AA compliance across 10+ core components, embedding accessibility as a non-negotiable system property rather than a per-project checklist item',
+      'Reduced design-dev churn and post-production bugs through upfront system alignment and QA-integrated handoff workflows',
+      'Positioned Wheels as market leader with a scalable design system casting clear vision for future product experience across the merged organization'
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/wass-documentation.jpg?raw=true',
@@ -81,6 +81,59 @@ export const portfolioData = [
     ]
   },
 
+  {
+    alias: 'fleet-redeployment',
+    title: 'Fleet Redeployment Hub',
+    subtitle: 'AI-Assisted Proof of Concept for Bulk Vehicle Redeployment Workflows',
+    duration: '2025',
+
+    tag: [
+      'Design System',
+      'AI-Assisted',
+      'KendoReact',
+      'Enterprise',
+      'Prototyping'
+    ],
+
+    mainImg: '',
+    mainCap: 'Fleet Redeployment Hub, vehicle inventory management with natural language command bar',
+
+    challenge:
+      'An enterprise fleet management client needed a proof of concept demonstrating a smarter approach to bulk vehicle redeployment, a workflow that typically requires hours of manual coordination across spreadsheets, emails, and phone calls. The PoC needed to show how AI-assisted natural language commands could surface the right vehicles, support batch actions, and guide operators through redeployment decisions with minimal friction.',
+
+    myRole: [
+      'Solo designer on the PoC: owned all UX, UI, and design system decisions from concept through handoff-ready prototype',
+      'Design-to-development bridge: translated Figma designs into KendoReact implementation using AI-assisted front-end tooling (Lovable) and VS Code',
+      'AI workflow evaluator: assessed AI-generated UI implementations against design intent, establishing ground-truth corrections and quality criteria',
+      'Documentation author: wrote copilot-instructions.md and component specifications enabling the engineering architect to build accurately from design output'
+    ],
+
+    approaches: [
+      'Designed a four-state natural language command bar (idle, processing, results, error) that communicates AI confidence and action scope clearly',
+      'Built a semantic status badge system with consistent color semantics (blue/gray/orange/red) that communicates vehicle availability at a glance across a dense inventory grid',
+      'Established vehicle grid with filtering, bulk selection, and batch redeployment actions, designed for operators managing hundreds of assets',
+      'Designed a side drawer for individual vehicle detail and a batch redeployment modal for multi-vehicle action confirmation',
+      'Used AI-assisted tooling (Lovable + Figma REST API) to generate and evaluate front-end implementations, directly informing what AI-generated UI gets right and where it needs human correction'
+    ],
+
+    impact: [
+      'Delivered a functional, client-ready PoC on a compressed timeline demonstrating AI-assisted fleet management at scale',
+      'Established KendoReact component patterns and copilot instructions that gave the engineering architect a clear, accurate implementation path',
+      'Developed firsthand experience evaluating AI-generated UI against design intent, a capability directly applicable to AI training data and frontier lab design tooling work',
+      'Proved a natural language + bulk action model that reduces multi-hour coordination workflows to a single-screen interaction'
+    ],
+
+    tools: [
+      'Figma',
+      'KendoReact',
+      'Lovable',
+      'VS Code',
+      'React'
+    ],
+
+    links: []
+  },
+
   // SIDE PROJECTS - Demonstrating breadth and passion
   {
     alias: 'wiki-ui',
@@ -92,7 +145,8 @@ export const portfolioData = [
       'Self-directed',
       'UX/UI',
       'Accessibility',
-      'Mobile'
+      'Mobile',
+      'Visual Craft'
     ],
 
     mainImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/wikiUI/wikiUI-feature.jpg',
@@ -106,7 +160,7 @@ export const portfolioData = [
     ],
 
     overview: [
-      'Wikipedia.org\'s UI has seen minimal changes since conception. This self-initiated redesign addresses the need for improved mobile user experience by restructuring content, emphasizing actionable items, and enhancing contrast while preserving functionality. Goal is creating scalable design system for entire site.'
+      'Self-directed mobile interface redesign of wikipedia.org, addressing longstanding UX debt through a new design system, improved visual hierarchy, and accessibility improvements. Conducted ongoing feedback collection via social media communities to validate direction. The goal was creating a scalable design system foundation for the entire site, not just a visual refresh.'
     ],
 
     method: [
@@ -221,13 +275,14 @@ export const portfolioData = [
   {
     alias: 'written-in-stone',
     title: 'Written in Stone App',
-    subtitle: 'Interactive web application empowering independent exploration of biblical contexts',
+    subtitle: 'Full-stack capstone, interactive web app surfacing biblical geography and historical context through map-based exploration, built in Vue with Leaflet',
     duration: 'Summer 2023',
 
     tag: [
       'Vue',
       'Full Stack',
-      'MCAD'
+      'MCAD',
+      'UX Research'
     ],
 
     mainImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/capstone/mac-mockup.png',
