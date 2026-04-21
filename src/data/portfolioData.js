@@ -140,6 +140,80 @@ export const portfolioData = [
     ]
   },
 
+  {
+    alias: 'budgety',
+    title: 'Budgety App',
+    subtitle: 'A personal finance experience that helps users build confidence through clear budgeting habits',
+    duration: '2026',
+
+    tag: [
+      'UX/UI',
+      'React',
+      'Personal Finance',
+      'Product Design',
+      'Dashboard'
+    ],
+
+    mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/budgety/budgety-cover.jpg?raw=true',
+    mainCap: 'Budgety dashboard focused on monthly planning, category tracking, and savings progress',
+
+    challenge:
+      'Early-career professionals often track spending across disconnected bank apps and spreadsheets, which makes it difficult to maintain a clear monthly plan. Budgety was framed as a lightweight budgeting product that turns scattered transaction data into simple, actionable decisions users can trust.',
+
+    myRole: [
+      'Led end-to-end product design from problem framing and information architecture through high-fidelity UI and prototype flows',
+      'Defined interaction patterns for recurring budgets, category overages, and bill reminders to reduce decision fatigue',
+      'Built reusable UI components and states that could be implemented quickly in a React front-end',
+      'Validated layout and copy direction through rapid feedback rounds with target users'
+    ],
+
+    approaches: [
+      'Mapped core jobs-to-be-done: set monthly budget, monitor category burn, and adjust before overspending',
+      'Designed an at-a-glance financial health model using progress bars, status chips, and positive/negative trend indicators',
+      'Introduced category cards with quick actions (edit limit, pause category, add note) to keep common tasks one tap away',
+      'Created onboarding and empty-state guidance to help first-time users connect accounts and set initial goals',
+      'Documented responsive behaviors for mobile and desktop breakpoints to keep the experience consistent across devices'
+    ],
+
+    overviewImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/budgety/budgety-overview.jpg?raw=true',
+    overviewCap: 'Overview flow from onboarding to first monthly budget setup',
+
+    methodImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/budgety/budgety-method.jpg?raw=true',
+    methodCap: 'Component and interaction system for budget categories, alerts, and editable limits',
+
+    impact: [
+      'Reduced time-to-first-budget by simplifying onboarding into a guided three-step flow',
+      'Improved spending awareness with color-safe status cues and weekly trend summaries',
+      'Provided a clear implementation-ready UI spec package for React development',
+      'Demonstrated how simple, transparent micro-interactions can increase confidence in personal finance decisions'
+    ],
+
+    outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/budgety/budgety-outcome.jpg?raw=true',
+    outcomeCap: 'Final Budgety experience with monthly snapshot, category controls, and savings goal tracking',
+
+    tools: [
+      'Figma',
+      'React',
+      'Miro',
+      'Notion'
+    ],
+
+    links: [
+      {
+        link: 'https://budgety-demo.vercel.app/',
+        linkDescription: 'Budgety Live Demo'
+      },
+      {
+        link: 'https://github.com/davyjonesdesign/budgety-app',
+        linkDescription: 'Budgety Repository'
+      },
+      {
+        link: 'https://www.figma.com/file/xxxxxxxx/Budgety-Case-Study',
+        linkDescription: 'Budgety Design File'
+      }
+    ]
+  },
+
   // SIDE PROJECTS - Demonstrating breadth and passion
   {
     alias: 'wiki-ui',
