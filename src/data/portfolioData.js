@@ -430,76 +430,76 @@ export const portfolioData = [
     ]
   },
 
-  {
-    alias: 'portfolio-redesign',
-    title: 'Portfolio Redesign',
-    subtitle: 'Rebuilt portfolio site with Vue.js focusing on performance, readability, and professional presentation',
-    duration: 'Fall 2021',
+  // {
+  //   alias: 'portfolio-redesign',
+  //   title: 'Portfolio Redesign',
+  //   subtitle: 'Rebuilt portfolio site with Vue.js focusing on performance, readability, and professional presentation',
+  //   duration: 'Fall 2021',
 
-    tag: [
-      'Self-directed',
-      'Vue',
-      'Development'
-    ],
+  //   tag: [
+  //     'Self-directed',
+  //     'Vue',
+  //     'Development'
+  //   ],
 
-    mainImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/portfolio-redesign/portfolio-mockup.jpg',
-    mainCap: 'Redesigned portfolio work detail page',
+  //   mainImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/portfolio-redesign/portfolio-mockup.jpg',
+  //   mainCap: 'Redesigned portfolio work detail page',
 
-    objectives: [
-      'Create portfolio to share with employers, clients, and professional network',
-      'Invite engaging exploration of showcased work',
-      'Foster connections and collaboration opportunities'
-    ],
+  //   objectives: [
+  //     'Create portfolio to share with employers, clients, and professional network',
+  //     'Invite engaging exploration of showcased work',
+  //     'Foster connections and collaboration opportunities'
+  //   ],
 
-    overview: [
-      'Initial portfolio faced readability and performance challenges with ornate style mismatched to field. Redesigned and rebuilt drawing inspiration from material design for clean, modern, efficient experience.'
-    ],
+  //   overview: [
+  //     'Initial portfolio faced readability and performance challenges with ornate style mismatched to field. Redesigned and rebuilt drawing inspiration from material design for clean, modern, efficient experience.'
+  //   ],
 
-    method: [
-      'Gathered continuous feedback identifying issues',
-      'Enhanced for improved readability and loading performance',
-      'Utilized material design principles creating clean design system in Figma',
-      'Emphasized efficiency and simplicity'
-    ],
+  //   method: [
+  //     'Gathered continuous feedback identifying issues',
+  //     'Enhanced for improved readability and loading performance',
+  //     'Utilized material design principles creating clean design system in Figma',
+  //     'Emphasized efficiency and simplicity'
+  //   ],
 
-    outcome: [
-      'Launched updated site with professional vibe',
-      'Ongoing optimization maintaining high-quality user experience',
-      'Continued refinement leading to current site'
-    ],
+  //   outcome: [
+  //     'Launched updated site with professional vibe',
+  //     'Ongoing optimization maintaining high-quality user experience',
+  //     'Continued refinement leading to current site'
+  //   ],
 
-    tools: [
-      'Figma',
-      'Adobe Illustrator',
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Vue.js',
-      'GitHub'
-    ],
+  //   tools: [
+  //     'Figma',
+  //     'Adobe Illustrator',
+  //     'HTML',
+  //     'CSS',
+  //     'JavaScript',
+  //     'Vue.js',
+  //     'GitHub'
+  //   ],
 
-    overviewImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/portfolio-redesign/old-portfolio.jpg',
-    overviewCap: 'Original portfolio site',
+  //   overviewImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/portfolio-redesign/old-portfolio.jpg',
+  //   overviewCap: 'Original portfolio site',
 
-    methodImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/portfolio-redesign/home-screenshot.jpg',
-    methodCap: 'Redesigned home page',
+  //   methodImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/portfolio-redesign/home-screenshot.jpg',
+  //   methodCap: 'Redesigned home page',
 
-    outcomeImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/portfolio-redesign/work-screenshot.jpg',
-    outcomeCap: 'Redesigned work page',
+  //   outcomeImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/portfolio-redesign/work-screenshot.jpg',
+  //   outcomeCap: 'Redesigned work page',
 
-    links: [
-      {
-        link: 'https://www.figma.com/file/6gKrCfishGsJQYHD2HxqiR/davyjones.me(portfolio)?type=design&node-id=0%3A1&mode=design&t=2gweuBc77zzPnidg-1',
-        linkDescription: 'Figma Design File'
-      },
-      {
-        link: 'https://github.com/davyjonesdesign/davyjones-2/',
-        linkDescription: 'GitHub Repository'
-      },
-      {
-        link: 'https://archive.davyjones.me/',
-        linkDescription: 'Original Portfolio'
-      }
-    ]
-  }
+  //   links: [
+  //     {
+  //       link: 'https://www.figma.com/file/6gKrCfishGsJQYHD2HxqiR/davyjones.me(portfolio)?type=design&node-id=0%3A1&mode=design&t=2gweuBc77zzPnidg-1',
+  //       linkDescription: 'Figma Design File'
+  //     },
+  //     {
+  //       link: 'https://github.com/davyjonesdesign/davyjones-2/',
+  //       linkDescription: 'GitHub Repository'
+  //     },
+  //     {
+  //       link: 'https://archive.davyjones.me/',
+  //       linkDescription: 'Original Portfolio'
+  //     }
+  //   ]
+  // }
 ];
