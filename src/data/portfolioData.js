@@ -136,6 +136,10 @@ export const portfolioData = [
         link: 'https://fleet-portal-gold.vercel.app/',
         linkDescription: 'Fleet Redeployment Hub'
       },
+       {
+        link: 'https://github.com/davyjonesdesign/fleet-portal/tree/main/fleet%20portal/fleet-portal',
+        linkDescription: 'Fleet Portal Repository'
+      }
       
     ]
   },
@@ -200,16 +204,12 @@ export const portfolioData = [
 
     links: [
       {
-        link: 'https://budgety-demo.vercel.app/',
+        link: 'https://budgety.davyjones.me/',
         linkDescription: 'Budgety Live Demo'
       },
       {
-        link: 'https://github.com/davyjonesdesign/budgety-app',
+        link: 'https://github.com/davyjonesdesign/budget-app',
         linkDescription: 'Budgety Repository'
-      },
-      {
-        link: 'https://www.figma.com/file/xxxxxxxx/Budgety-Case-Study',
-        linkDescription: 'Budgety Design File'
       }
     ]
   },
