@@ -95,7 +95,7 @@ export const portfolioData = [
       'Prototyping'
     ],
 
-    mainImg: '',
+    mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleet-portal.jpg?raw=true',
     mainCap: 'Fleet Redeployment Hub, vehicle inventory management with natural language command bar',
 
     challenge:
@@ -131,7 +131,13 @@ export const portfolioData = [
       'React'
     ],
 
-    links: []
+    links: [
+       {
+        link: 'https://fleet-portal-gold.vercel.app/',
+        linkDescription: 'Fleet Redeployment Hub'
+      },
+      
+    ]
   },
 
   // SIDE PROJECTS - Demonstrating breadth and passion
