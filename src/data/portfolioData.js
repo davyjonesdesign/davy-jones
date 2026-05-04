@@ -19,7 +19,7 @@ export const portfolioData = [
 
     // Recruiter-focused structure
     challenge:
-      'After the merger of Wheels, Donlen, and LeasePlan USA, the organization faced fragmented design languages, inconsistent UI across platforms, and a governance vacuum, no shared standards, no clear system ownership, and no framework for deciding when teams could deviate from established patterns. Designers and developers worked in silos, accessibility was inconsistent, and color semantics were actively confusing (orange used for both actions and warnings). Launching a major client-facing product within the year required not just a new component library, but an organizational governance model that would hold across competing priorities and timelines.',
+      'Following the merger of Wheels, Donlen, and LeasePlan USA, product teams were shipping through three competing UI models with no system governance, no shared contribution rules, and no reliable design-to-code parity. The risk was organizational: inconsistent experiences, slower delivery, accessibility gaps, and repeated implementation decisions across teams. The business needed a system-level operating model that could align product, engineering, marketing, and agency partners while still supporting product-specific needs.',
 
     myRole: [
       'Design System Governor: Owned system integrity, boundaries, and evolution across design, engineering, marketing, and external agency partners',
@@ -45,12 +45,12 @@ export const portfolioData = [
     methodCap: 'ThemeBuilder implementation ensuring design-development parity',
 
     impact: [
-      'Unified three merged companies under a single design language, governing coherence across Renewals, FleetView, and DriverView without losing the distinct needs of each product area',
-      'Cut developer implementation time by 50% through systematic component documentation and reusable patterns that reduced repeated decision-making',
-      'Established governance model defining system boundaries, contribution workflows, and review processes, reducing off-system divergence across product, marketing, and external teams',
-      'Achieved WCAG AA compliance across 10+ core components, embedding accessibility as a non-negotiable system property rather than a per-project checklist item',
-      'Reduced design-dev churn and post-production bugs through upfront system alignment and QA-integrated handoff workflows',
-      'Positioned Wheels as market leader with a scalable design system casting clear vision for future product experience across the merged organization'
+      'Replaced fragmented legacy UI practices with a single enterprise design system spanning three merged organizations and multiple product surfaces',
+      'Reduced implementation time by 50% by standardizing reusable component patterns, documentation, and decision frameworks engineering teams could apply directly',
+      'Established system governance (boundaries, contribution workflow, and review criteria) that reduced off-system variance across product, marketing, and external agencies',
+      'Embedded accessibility as a system property, reaching WCAG AA standards across core components instead of treating compliance as a late-stage project task',
+      'Improved delivery predictability by creating parity across Figma, ThemeBuilder, and Storybook, lowering design-dev churn and post-release UI defects',
+      'Raised cross-org UX maturity by giving teams a shared language for component decisions, scaling influence beyond any single squad'
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/wass-documentation.jpg?raw=true',
@@ -99,7 +99,7 @@ export const portfolioData = [
     mainCap: 'Fleet Redeployment Hub, vehicle inventory management with natural language command bar',
 
     challenge:
-      'An enterprise fleet management client needed a proof of concept demonstrating a smarter approach to bulk vehicle redeployment, a workflow that typically requires hours of manual coordination across spreadsheets, emails, and phone calls. The PoC needed to show how AI-assisted natural language commands could surface the right vehicles, support batch actions, and guide operators through redeployment decisions with minimal friction.',
+      'An enterprise fleet client needed to validate whether AI-assisted interaction patterns could reduce a multi-hour redeployment workflow into a guided, auditable experience. Existing operations depended on fragmented spreadsheets, email threads, and manual status checks, creating high cognitive load and low confidence in action outcomes. The PoC needed to prove a natural language interface could support high-volume decisions while clearly communicating intent, system state, and action confidence.',
 
     myRole: [
       'Solo designer on the PoC: owned all UX, UI, and design system decisions from concept through handoff-ready prototype',
@@ -117,10 +117,11 @@ export const portfolioData = [
     ],
 
     impact: [
-      'Delivered a functional, client-ready PoC on a compressed timeline demonstrating AI-assisted fleet management at scale',
-      'Established KendoReact component patterns and copilot instructions that gave the engineering architect a clear, accurate implementation path',
-      'Developed firsthand experience evaluating AI-generated UI against design intent, a capability directly applicable to AI training data and frontier lab design tooling work',
-      'Proved a natural language + bulk action model that reduces multi-hour coordination workflows to a single-screen interaction'
+      'Delivered a client-ready PoC that validated AI-assisted redeployment workflows in a single operational interface on a compressed timeline',
+      'Defined natural language interaction patterns with explicit idle/processing/results/error states so operators could interpret system status and next actions quickly',
+      'Designed confidence-aware communication patterns that made AI output actionable by clarifying scope, certainty, and recovery paths when errors occurred',
+      'Created reusable KendoReact patterns and implementation guidance that improved engineering handoff quality and reduced interpretation risk',
+      'Demonstrated that a natural language + bulk-action model can replace multi-step coordination loops with a faster, lower-friction decision flow'
     ],
 
     tools: [
