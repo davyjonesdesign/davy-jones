@@ -54,26 +54,38 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="landing-highlights">
-        <div className="highlight-card">
+      <div className="landing-highlights landing-highlights-featured">
+        <div className="highlight-card highlight-card-featured">
+          <div className="highlight-visual" aria-hidden="true">🧩</div>
           <span className="highlight-stat">Featured</span>
           <h3>Wheels Unified Design System</h3>
           <p>
             Owned governance and evolution of a cross-platform enterprise system that unified
             three companies and improved delivery speed through reusable patterns and documentation.
           </p>
+          <ul className="highlight-tags" aria-label="Project themes">
+            <li>Governance</li>
+            <li>Cross-platform</li>
+            <li>Documentation</li>
+          </ul>
           <Link to="/work/wheels" className="btn btn-secondary">
             View Case Study
           </Link>
         </div>
 
-        <div className="highlight-card">
+        <div className="highlight-card highlight-card-featured">
+          <div className="highlight-visual" aria-hidden="true">⚡</div>
           <span className="highlight-stat">Featured</span>
           <h3>Fleet Redeployment Hub</h3>
           <p>
             Designed an AI-assisted enterprise workflow with natural language interaction patterns,
             confidence-aware states, and bulk-action flows for high-volume fleet operations.
           </p>
+          <ul className="highlight-tags" aria-label="Project themes">
+            <li>AI-assisted</li>
+            <li>High volume</li>
+            <li>Workflow design</li>
+          </ul>
           <Link to="/work/fleet-redeployment" className="btn btn-secondary">
             View Case Study
           </Link>

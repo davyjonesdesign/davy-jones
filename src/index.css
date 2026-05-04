@@ -522,6 +522,75 @@ nav {
   margin-bottom: var(--spacing-sm);
 }
 
+
+.highlight-card ul {
+  margin-top: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+}
+
+.highlight-card li {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.landing-highlights-featured {
+  align-items: stretch;
+}
+
+.highlight-card-featured {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  background: linear-gradient(160deg, var(--color-background-secondary), var(--color-background));
+  overflow: hidden;
+}
+
+.highlight-card-featured .highlight-stat {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0;
+}
+
+.highlight-visual {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-active-background);
+  font-size: 1.25rem;
+}
+
+.highlight-card-featured p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.highlight-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  padding-left: 0;
+  margin: 0 0 var(--spacing-md);
+}
+
+.highlight-tags li {
+  margin: 0;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background-color: var(--color-hover-background);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.highlight-card-featured .btn {
+  margin-top: auto;
+}
+
 /* ==================== ABOUT/EXPERIENCE PAGE ==================== */
 
 .about {
