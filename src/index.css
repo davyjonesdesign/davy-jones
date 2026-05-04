@@ -497,10 +497,9 @@ nav {
 }
 
 .highlight-card {
-  padding: var(--spacing-xl);
-  background-color: var(--color-background-secondary);
+  padding: var(--spacing-md);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-background-tertiary);
 }
 
 .highlight-card h3 {
@@ -525,7 +524,7 @@ nav {
 
 .highlight-card ul {
   margin-top: var(--spacing-sm);
-  padding-left: var(--spacing-lg);
+  padding-left: var(--spacing-md);
 }
 
 .highlight-card li {
@@ -534,11 +533,15 @@ nav {
 }
 
 .landing-highlights-featured {
+  
   align-items: stretch;
 }
 
 .highlight-card-featured {
   position: relative;
+  padding: var(--spacing-xl);
+  border: 1px solid var(--color-border);
+
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
@@ -574,7 +577,7 @@ nav {
   flex-wrap: wrap;
   gap: var(--spacing-sm);
   padding-left: 0;
-  margin: 0 0 var(--spacing-md);
+  margin: 0 0 var(--spacing-md) -16px;
 }
 
 .highlight-tags li {
