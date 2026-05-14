@@ -95,7 +95,7 @@ export const portfolioData = [
       'Prototyping'
     ],
 
-    mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleet-portal.jpg?raw=true',
+    mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/veh-red-3.jpg?raw=true',
     mainCap: 'Fleet Redeployment Hub, vehicle inventory management with natural language command bar',
 
     challenge:
@@ -133,14 +133,14 @@ export const portfolioData = [
     ],
 
     links: [
-       {
-        link: 'https://fleet-portal-gold.vercel.app/',
-        linkDescription: 'Fleet Redeployment Hub'
-      },
-       {
-        link: 'https://github.com/davyjonesdesign/fleet-portal/tree/main/fleet%20portal/fleet-portal',
-        linkDescription: 'Fleet Portal Repository'
-      }
+      //  {
+      //   link: 'https://fleet-portal-gold.vercel.app/',
+      //   linkDescription: 'Fleet Redeployment Hub'
+      // },
+      //  {
+      //   link: 'https://github.com/davyjonesdesign/fleet-portal/tree/main/fleet%20portal/fleet-portal',
+      //   linkDescription: 'Fleet Portal Repository'
+      // }
       
     ]
   },
