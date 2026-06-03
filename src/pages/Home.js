@@ -1,96 +1,95 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { portfolioData } from '../data/portfolioData';
+
+const featuredAliases = ['wheels', 'new-driver-experience', 'fleet-redeployment'];
+const featuredProjects = featuredAliases
+  .map((alias) => portfolioData.find((project) => project.alias === alias))
+  .filter(Boolean);
 
 const Home = () => {
   return (
     <div className="landing container">
       <div className="landing-hero">
-        <h1>I Build Enterprise Design Systems That Scale Product Decisions</h1>
+        <p className="eyebrow">Lead UX Designer · Enterprise Product Strategy · Design Systems</p>
+        <h1>Design Leadership That Moves Organizations Forward</h1>
         <p className="landing-intro">
-          Staff-level Design Systems and UX Engineer with 8+ years leading system governance,
-          engineering partnership, and AI-assisted workflow design. I help product organizations
-          move faster with shared standards, implementation-ready components, and decision frameworks
-          teams can trust.
+          I set UX strategy and serve as design authority for complex enterprise products, bringing
+          product, engineering, and business teams into alignment around decisions that improve quality,
+          delivery speed, and customer outcomes.
+        </p>
+        <p className="landing-proof">
+          This portfolio shows UX strategy and design leadership, complex product ownership, scalable
+          design systems, and mentorship that helps design cultures mature without losing momentum.
         </p>
         <div className="landing-cta">
           <Link to="/work" className="btn btn-primary">
-            View My Work
+            View Case Studies
           </Link>
-          <Link to="/contact" className="btn btn-secondary">
-            Get in Touch
+          <Link to="/systems" className="btn btn-secondary">
+            Design Systems Deep Dive
           </Link>
         </div>
       </div>
 
-      <div className="landing-highlights">
+      <section aria-labelledby="leadership-proof" className="landing-highlights">
+        <h2 id="leadership-proof" className="section-heading">Design Leadership</h2>
         <div className="highlight-card">
-          <span className="highlight-stat">Proof</span>
-          <h3>System Scale</h3>
+          <span className="highlight-stat">Strategy</span>
+          <h3>Set direction across ambiguity</h3>
           <ul>
-            <li>Unified 3 merged companies under one design language.</li>
-            <li>Established governance used across product, marketing, and agency teams.</li>
-            <li>Created one source of truth spanning web and mobile implementation.</li>
-          </ul>
-        </div>
-
-        <div className="highlight-card">
-          <span className="highlight-stat">Proof</span>
-          <h3>Component Depth</h3>
-          <ul>
-            <li>Built and governed 60+ production-ready components.</li>
-            <li>Maintained parity across Figma, ThemeBuilder, and Storybook.</li>
-            <li>Reduced implementation ambiguity and design-dev churn.</li>
+            <li>Translate complex operational goals into product experience strategy.</li>
+            <li>Define outcomes, principles, and decision criteria before interface execution.</li>
+            <li>Use research and workflow evidence to move stakeholders toward shared priorities.</li>
           </ul>
         </div>
 
         <div className="highlight-card">
-          <span className="highlight-stat">Proof</span>
-          <h3>Cross-Org Influence</h3>
+          <span className="highlight-stat">Authority</span>
+          <h3>Raise the bar without direct authority</h3>
           <ul>
-            <li>Partnered with engineering and product without direct authority.</li>
-            <li>Set reusable standards that improved delivery consistency.</li>
-            <li>Applied AI-assisted workflows to accelerate prototyping and handoff.</li>
+            <li>Govern design quality across product, engineering, marketing, and agency teams.</li>
+            <li>Make standards feel enabling by pairing guardrails with practical implementation paths.</li>
+            <li>Use critique, documentation, and facilitation to make better decisions repeatable.</li>
           </ul>
-        </div>
-      </div>
-
-      <div className="landing-highlights landing-highlights-featured">
-        <div className="highlight-card highlight-card-featured">
-          <div className="highlight-visual" aria-hidden="true">🧩</div>
-          <span className="highlight-stat">Featured</span>
-          <h3>Wheels Unified Design System</h3>
-          <p>
-            Owned governance and evolution of a cross-platform enterprise system that unified
-            three companies and improved delivery speed through reusable patterns and documentation.
-          </p>
-          <ul className="highlight-tags" aria-label="Project themes">
-            <li>Governance</li>
-            <li>Cross-platform</li>
-            <li>Documentation</li>
-          </ul>
-          <Link to="/work/wheels" className="btn btn-secondary">
-            View Case Study
-          </Link>
         </div>
 
-        <div className="highlight-card highlight-card-featured">
-          <div className="highlight-visual" aria-hidden="true">⚡</div>
-          <span className="highlight-stat">Featured</span>
-          <h3>Fleet Redeployment Hub</h3>
-          <p>
-            Designed an AI-assisted enterprise workflow with natural language interaction patterns,
-            confidence-aware states, and bulk-action flows for high-volume fleet operations.
-          </p>
-          <ul className="highlight-tags" aria-label="Project themes">
-            <li>AI-assisted</li>
-            <li>High volume</li>
-            <li>Workflow design</li>
+        <div className="highlight-card">
+          <span className="highlight-stat">Scale</span>
+          <h3>Build systems teams can trust</h3>
+          <ul>
+            <li>Unified three merged companies under one design language.</li>
+            <li>Built and governed 60+ production-ready components with WCAG AA standards.</li>
+            <li>Reduced implementation time by 50% through reusable patterns and documentation.</li>
           </ul>
-          <Link to="/work/fleet-redeployment" className="btn btn-secondary">
-            View Case Study
-          </Link>
         </div>
-      </div>
+      </section>
+
+      <section aria-labelledby="featured-work" className="featured-work-section">
+        <div className="section-header-row">
+          <h2 id="featured-work" className="section-heading">Anchor Case Studies</h2>
+          <Link to="/work" className="text-link">All work</Link>
+        </div>
+        <div className="featured-project-grid">
+          {featuredProjects.map((project) => (
+            <Link key={project.alias} to={`/work/${project.alias}`} className="featured-project-card">
+              <div className="featured-project-image">
+                <img src={project.mainImg} alt={`${project.title} thumbnail`} />
+              </div>
+              <div className="featured-project-body">
+                <span className="highlight-stat">Featured</span>
+                <h3>{project.title}</h3>
+                <p>{project.subtitle}</p>
+                <ul className="highlight-tags" aria-label={`${project.title} themes`}>
+                  {project.tag.slice(0, 3).map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

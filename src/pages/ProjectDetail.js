@@ -141,6 +141,21 @@ const ProjectDetail = () => {
           </>
         )}
 
+        {/* Leadership & Impact */}
+        {project.leadershipImpact && (
+          <>
+            <section>
+              <h2>Leadership &amp; Impact</h2>
+              <ul>
+                {project.leadershipImpact.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            </section>
+            <hr />
+          </>
+        )}
+
         {/* Approach */}
         {project.approaches && (
           <>
@@ -217,7 +232,7 @@ const ProjectDetail = () => {
         {project.impact && (
           <>
             <section>
-              <h2>Impact</h2>
+              <h2>Outcomes</h2>
               <ul>
                 {project.impact.map((item, idx) => (
                   <li key={idx}>{item}</li>
