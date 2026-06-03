@@ -108,8 +108,8 @@ const About = () => {
       </p>
 
       <a
-        href="/files/JonesDavy_Resume_2026_st.pdf"
-        download="Resume_Jones-David_2026.pdf"
+        href="/files/JonesDavy_Resume.doc"
+        download="JonesDavy_Resume.doc"
         className="btn btn-primary"
         aria-label="Download resume as PDF"
         style={{display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.5rem'}}
