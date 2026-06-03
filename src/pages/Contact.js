@@ -1,21 +1,24 @@
-import React from 'react'; 
-import { Mail, Linkedin } from 'lucide-react';
+import React from 'react';
+import { Mail, Linkedin, Download } from 'lucide-react';
 
 const Contact = () => {
   return (
     <div className="contact container">
-      <h1>Let's Connect</h1>
+      <p className="eyebrow">Contact</p>
+      <h1>Let's talk about Lead UX and Principal Designer opportunities.</h1>
       <p className="contact-intro">
-        I'm open to senior and staff-level roles in design systems governance, 
-        production interface design, and enterprise UX, remote preferred. I'm 
-        also available for contract work in design system audits, governance 
-        consulting, and AI training data (UI/UX specialist track). Reach out 
-        and let's talk.
+        I'm open to Lead UX Designer and Principal Designer roles focused on UX strategy, design
+        systems, and building design cultures at scale. Remote is preferred, and I am open to hybrid
+        opportunities in Chicagoland.
+      </p>
+      <p className="contact-intro">
+        Interested in discussing UX strategy, design systems, and building design cultures at scale?
+        Reach out by email, connect on LinkedIn, or download my resume.
       </p>
 
       <div className="contact-links">
-        <a 
-          href="mailto:dmjones.me@gmail.com" 
+        <a
+          href="mailto:dmjones.me@gmail.com"
           className="contact-link"
         >
           <Mail size={24} />
@@ -25,8 +28,8 @@ const Contact = () => {
           </div>
         </a>
 
-        <a 
-          href="https://linkedin.com/in/dmjonesme" 
+        <a
+          href="https://linkedin.com/in/dmjonesme"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"
@@ -35,6 +38,18 @@ const Contact = () => {
           <div>
             <strong>LinkedIn</strong>
             <p style={{margin: 0, fontSize: '0.875rem', color: 'var(--color-text-tertiary)'}}>linkedin.com/in/dmjonesme</p>
+          </div>
+        </a>
+
+        <a
+          href="/files/JonesDavy_Resume_2026_st.pdf"
+          download="Resume_Jones-David_2026.pdf"
+          className="contact-link"
+        >
+          <Download size={24} />
+          <div>
+            <strong>Resume</strong>
+            <p style={{margin: 0, fontSize: '0.875rem', color: 'var(--color-text-tertiary)'}}>Download PDF</p>
           </div>
         </a>
       </div>

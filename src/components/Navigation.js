@@ -26,7 +26,10 @@ const Navigation = () => {
   
   const isActive = (path) => {
     if (path === '/work') {
-      return location.pathname === '/work' || location.pathname.startsWith('/work/');
+      return location.pathname === '/work' || (location.pathname.startsWith('/work/') && location.pathname !== '/work/design-systems');
+    }
+    if (path === '/systems') {
+      return location.pathname === '/systems' || location.pathname === '/work/design-systems';
     }
     return location.pathname === path;
   };
@@ -74,6 +77,13 @@ const Navigation = () => {
             Work
           </Link>
           <Link
+            to="/systems"
+            className={`nav-link ${isActive('/systems') ? 'active' : ''}`}
+            aria-current={isActive('/systems') ? 'page' : undefined}
+          >
+            Systems
+          </Link>
+          <Link
             to="/contact"
             className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
             aria-current={isActive('/contact') ? 'page' : undefined}
@@ -119,6 +129,14 @@ const Navigation = () => {
           aria-current={isActive('/work') ? 'page' : undefined}
         >
           Work
+        </Link>
+        <Link
+          to="/systems"
+          className={`mobile-menu-link ${isActive('/systems') ? 'active' : ''}`}
+          onClick={handleLinkClick}
+          aria-current={isActive('/systems') ? 'page' : undefined}
+        >
+          Systems
         </Link>
         <Link
           to="/contact"
