@@ -5,18 +5,23 @@ import { portfolioData } from '../data/portfolioData';
 const Work = () => {
   return (
     <div className="work container">
-      <h1>Work</h1>
+      <p className="eyebrow">Case Studies</p>
+      <h1>Enterprise UX Strategy, Design Leadership & Systems</h1>
+      <p className="work-intro">
+        Anchor stories focused on design authority, product ownership, cross-functional influence,
+        mentorship, and the operating models that help enterprise teams deliver better experiences at scale.
+      </p>
 
       <div className="project-list">
         {portfolioData.map((project, idx) => (
-          <Link 
+          <Link
             key={idx}
             to={`/work/${project.alias}`}
             className="project-item"
           >
             <div className="project-thumbnail">
-              <img 
-                src={project.mainImg} 
+              <img
+                src={project.mainImg}
                 alt={`${project.title} - ${project.subtitle || 'project screenshot'}`}
               />
             </div>
@@ -24,7 +29,7 @@ const Work = () => {
               <h2>{project.title}</h2>
               <p className="project-subtitle">{project.subtitle}</p>
               <p className="project-duration">{project.duration}</p>
-              
+
               <div className="project-tags">
                 {project.tag.map((tag, i) => (
                   <span key={i}>

@@ -44,6 +44,13 @@ export const portfolioData = [
     methodImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/kendo-tb.jpg?raw=true',
     methodCap: 'ThemeBuilder implementation ensuring design-development parity',
 
+    leadershipImpact: [
+      'Led and influenced product, engineering, marketing, and external agency partners across three merged companies without relying on direct reporting authority',
+      'Changed the operating model from local UI decisions to governed, system-level decision making with documented contribution rules and review criteria',
+      'Mentored designers through Figma migration, component adoption, and system rationale so design quality could scale beyond one owner',
+      'Made design system contribution explicit in product delivery by connecting every reusable component to Figma, ThemeBuilder, Storybook, and Frontify documentation'
+    ],
+
     impact: [
       'Replaced fragmented legacy UI practices with a single enterprise design system spanning three merged organizations and multiple product surfaces',
       'Reduced implementation time by 50% by standardizing reusable component patterns, documentation, and decision frameworks engineering teams could apply directly',
@@ -81,6 +88,71 @@ export const portfolioData = [
     ]
   },
 
+
+  {
+    alias: 'new-driver-experience',
+    title: 'New Driver Experience',
+    subtitle: 'End-to-end product ownership for a research-driven enterprise onboarding experience',
+    duration: '2024',
+
+    tag: [
+      'UX Strategy',
+      'Product Ownership',
+      'Mentorship',
+      'Design System',
+      'Enterprise'
+    ],
+
+    mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/paper-figcomp.jpg?raw=true',
+    mainCap: 'New Driver Experience patterns grounded in the Wheels design system and enterprise workflow research',
+
+    challenge:
+      'New fleet drivers entered the ecosystem through fragmented communications, unclear task ownership, and inconsistent product surfaces. The experience created avoidable support burden and low confidence during a high-stakes first interaction with the fleet program. The product needed a clearer onboarding strategy that connected business rules, driver needs, system constraints, and reusable design system patterns.',
+
+    myRole: [
+      'Product design owner: led discovery, workflow definition, interaction design, and delivery alignment from early framing through implementation handoff',
+      'UX strategist: translated onboarding pain points into product principles, journey priorities, and measurable experience outcomes',
+      'Cross-functional facilitator: aligned product managers, engineering partners, business stakeholders, and support perspectives around the driver journey',
+      'Design mentor: guided peer designers through critique, design rationale, and system-based pattern selection',
+      'Design system contributor: identified onboarding components and states that could be reused across driver and fleet management workflows'
+    ],
+
+    approaches: [
+      'Mapped the driver onboarding journey from first notification through account setup, vehicle readiness, task completion, and support escalation',
+      'Synthesized research and stakeholder input into moments of uncertainty, ownership gaps, and decision points that needed clearer UX support',
+      'Defined interaction patterns for progressive task guidance, status visibility, document readiness, and support handoff',
+      'Used design critiques to pressure-test hierarchy, messaging, and edge cases with product and engineering partners',
+      'Connected new patterns back to the Wheels design system so delivery improved the broader product ecosystem instead of creating one-off UI'
+    ],
+
+    leadershipImpact: [
+      'Led cross-functional alignment around an end-to-end driver journey instead of isolated screen requests',
+      'Influenced product scope by shifting conversations from feature output to onboarding outcomes: clarity, confidence, and reduced avoidable support touchpoints',
+      'Mentored designers on how to use critique, research synthesis, and design system rationale to defend decisions with evidence',
+      'Turned product-specific onboarding work into reusable system patterns for tasks, statuses, guidance, and exception handling'
+    ],
+
+    impact: [
+      'Created a cohesive onboarding direction that reduced ambiguity across driver-facing touchpoints and internal delivery conversations',
+      'Improved design-dev clarity by documenting states, content rules, and component usage before implementation',
+      'Raised design quality through repeatable critique and review practices that made tradeoffs visible to product and engineering partners',
+      'Strengthened the design system by contributing reusable patterns for guided workflows, status communication, and task completion'
+    ],
+
+    outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/wass-documentation.jpg?raw=true',
+    outcomeCap: 'System documentation and reusable guidance patterns supported consistent onboarding delivery',
+
+    tools: [
+      'Figma',
+      'Miro',
+      'Frontify',
+      'KendoReact',
+      'Storybook'
+    ],
+
+    links: []
+  },
+
   {
     alias: 'fleet-redeployment',
     title: 'Fleet Redeployment Hub',
@@ -114,6 +186,13 @@ export const portfolioData = [
       'Established vehicle grid with filtering, bulk selection, and batch redeployment actions, designed for operators managing hundreds of assets',
       'Designed a side drawer for individual vehicle detail and a batch redeployment modal for multi-vehicle action confirmation',
       'Used AI-assisted tooling (Lovable + Figma REST API) to generate and evaluate front-end implementations, directly informing what AI-generated UI gets right and where it needs human correction'
+    ],
+
+    leadershipImpact: [
+      'Owned UX direction as the solo designer while aligning an engineering architect and enterprise stakeholders around a compressed proof-of-concept scope',
+      'Set design authority under constraints by defining what AI-assisted interaction could safely do, where confidence needed to be communicated, and how operators should recover from uncertainty',
+      'Created implementation guidance and component specifications that turned prototype decisions into reusable KendoReact patterns',
+      'Used AI-assisted prototyping as a facilitation tool, not a substitute for design judgment, to accelerate iteration while preserving quality'
     ],
 
     impact: [
