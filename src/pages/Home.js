@@ -11,16 +11,13 @@ const Home = () => {
   return (
     <div className="landing container">
       <div className="landing-hero">
-        <p className="eyebrow">Lead UX Designer · Enterprise Product Strategy · Design Systems</p>
-        <h1>Design Leadership That Moves Organizations Forward</h1>
+        <p className="eyebrow">Lead UX Designer · Principal-Scope Product Strategy · Design Systems</p>
+        <h1>UX Strategy &amp; Design Leadership</h1>
         <p className="landing-intro">
-          I set UX strategy and serve as design authority for complex enterprise products, bringing
-          product, engineering, and business teams into alignment around decisions that improve quality,
-          delivery speed, and customer outcomes.
+          Scaling design excellence across complex organizations. I set UX direction, serve as design authority, and turn ambiguous enterprise workflows into clear product experiences that teams can ship and maintain.
         </p>
         <p className="landing-proof">
-          This portfolio shows UX strategy and design leadership, complex product ownership, scalable
-          design systems, and mentorship that helps design cultures mature without losing momentum.
+          My work uses design systems as a strategic asset, mentorship as a multiplier, and accessibility as a foundation for products used by expert teams in high-pressure environments.
         </p>
         <div className="landing-cta">
           <Link to="/work" className="btn btn-primary">
