@@ -2,33 +2,57 @@ import React from 'react';
 import { Download } from 'lucide-react';
 
 const About = () => {
-  const competencies = [
-    'UX Strategy',
-    'Design Leadership',
-    'Human-Centered Design',
-    'Design Systems',
-    'Cross-Functional Influence',
-    'Design Mentorship'
-  ];
-
-  const leadershipSkills = [
-    'Design critique and review frameworks',
-    'Cross-functional alignment and facilitation',
-    'Design governance and operating models',
-    'Research synthesis and outcome definition',
-    'Mentorship and design culture evolution',
-    'Strategy and roadmap influence'
-  ];
-
-  const technicalSkills = [
-    'Figma (Expert)',
-    'Enterprise design systems',
-    'Component architecture',
-    'Semantic tokens',
-    'KendoReact and ThemeBuilder',
-    'React Native Paper',
-    'Storybook and Frontify',
-    'WCAG AA accessibility'
+  const skillGroups = [
+    {
+      title: 'Strategy & Vision',
+      skills: [
+        'UX Strategy & Direction',
+        'Design Systems Governance',
+        'Experience Architecture',
+        'Product Roadmap Influence',
+        'Cross-Functional Alignment'
+      ]
+    },
+    {
+      title: 'Design Craft',
+      skills: [
+        'Interaction Design',
+        'Information Architecture',
+        'User Research & Testing',
+        'Wireframing & Prototyping',
+        'Visual Design'
+      ]
+    },
+    {
+      title: 'Design Systems',
+      skills: [
+        'Component Architecture',
+        'Token Strategy & Management',
+        'Design Governance Frameworks',
+        'Accessibility (WCAG AA)',
+        'Inclusive Design'
+      ]
+    },
+    {
+      title: 'Leadership & Culture',
+      skills: [
+        'Design Mentorship',
+        'Team Coaching',
+        'Design Critique & Reviews',
+        'Design Culture Evolution',
+        'Stakeholder Communication'
+      ]
+    },
+    {
+      title: 'Tools & Technical',
+      skills: [
+        'Figma component architecture, variables, and design tokens',
+        'User research tools',
+        'Principle, Framer, and Lovable prototyping',
+        'Cursor, Claude Code, GitHub Copilot, and Figma MCP',
+        'React, TypeScript, JavaScript, HTML, CSS, Vue, and Git'
+      ]
+    }
   ];
 
   const cares = [
@@ -85,8 +109,7 @@ const About = () => {
       <p className="eyebrow">About</p>
       <h1>I set UX strategy and serve as design authority for complex, multi-team enterprise products.</h1>
       <p className="about-subtitle">
-        Senior/Lead UX Designer with 8+ years of experience moving from individual contributor to
-        design leader and design systems owner.
+        Senior UI Designer operating at principal scope, with 8+ years of experience across UX strategy, product design, design systems, mentorship, and cross-functional leadership.
       </p>
 
       <p>
@@ -102,9 +125,7 @@ const About = () => {
         adoption so quality becomes a shared practice rather than a late-stage review.
       </p>
       <p>
-        I am targeting Lead UX Designer and Principal Designer roles in enterprise tech where UX
-        strategy, cross-functional influence, design systems, and design culture matter. I am open to
-        remote or hybrid roles with a Chicagoland preference, targeting $130–155k.
+        I am based in Valparaiso, Indiana and targeting remote Lead UX Designer, Principal Designer, Design Systems Architect, and UX Strategy roles in enterprise tech where cross-functional influence and design culture matter.
       </p>
 
       <a
@@ -120,32 +141,19 @@ const About = () => {
 
       <hr />
 
-      <h2>Core Competencies</h2>
-      <div className="skills-grid">
-        {competencies.map((skill) => (
-          <div key={skill} className="skill-item">
-            {skill}
+      <h2>Skills & Competencies</h2>
+      {skillGroups.map((group) => (
+        <section key={group.title} className="skill-group" aria-labelledby={`${group.title}-heading`}>
+          <h3 id={`${group.title}-heading`}>{group.title}</h3>
+          <div className="skills-grid">
+            {group.skills.map((skill) => (
+              <div key={skill} className="skill-item">
+                {skill}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-
-      <h2>Leadership & Strategy</h2>
-      <div className="skills-grid">
-        {leadershipSkills.map((skill) => (
-          <div key={skill} className="skill-item">
-            {skill}
-          </div>
-        ))}
-      </div>
-
-      <h2>Technical Craft</h2>
-      <div className="skills-grid">
-        {technicalSkills.map((skill) => (
-          <div key={skill} className="skill-item">
-            {skill}
-          </div>
-        ))}
-      </div>
+        </section>
+      ))}
 
       <hr />
 

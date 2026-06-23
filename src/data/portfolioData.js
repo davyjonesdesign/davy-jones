@@ -3,7 +3,7 @@ export const portfolioData = [
   {
     alias: 'wheels',
     title: 'Wheels Unified Design System',
-    subtitle: 'Unifying Three Companies Through a Scalable Design Ecosystem Across Web and Mobile',
+    subtitle: '0-1 design system governance across Wheels, Donlen, and LeasePlan USA',
     duration: '2023 - Present',
 
     tag: [
@@ -92,8 +92,8 @@ export const portfolioData = [
   {
     alias: 'new-driver-experience',
     title: 'New Driver Experience',
-    subtitle: 'End-to-end product ownership for a research-driven enterprise onboarding experience',
-    duration: '2024',
+    subtitle: 'Research-led maintenance redesign for fleet managers and drivers, launching July 20, 2025',
+    duration: 'Launch: July 20, 2025',
 
     tag: [
       'UX Strategy',
@@ -107,22 +107,22 @@ export const portfolioData = [
     mainCap: 'New Driver Experience patterns grounded in the Wheels design system and enterprise workflow research',
 
     challenge:
-      'New fleet drivers entered the ecosystem through fragmented communications, unclear task ownership, and inconsistent product surfaces. The experience created avoidable support burden and low confidence during a high-stakes first interaction with the fleet program. The product needed a clearer onboarding strategy that connected business rules, driver needs, system constraints, and reusable design system patterns.',
+      'Drivers were not staying compliant with preventative maintenance because responsibilities, timing, and next actions were unclear. The redesign reframed maintenance as part of the broader vehicle lifecycle, giving drivers and fleet teams a clearer path from notification to task completion.',
 
     myRole: [
-      'Product design owner: led discovery, workflow definition, interaction design, and delivery alignment from early framing through implementation handoff',
+      'UX lead from discovery through production: served as design authority for research synthesis, interaction design, validation, and implementation alignment',
       'UX strategist: translated onboarding pain points into product principles, journey priorities, and measurable experience outcomes',
-      'Cross-functional facilitator: aligned product managers, engineering partners, business stakeholders, and support perspectives around the driver journey',
+      'Cross-functional facilitator: aligned product, engineering, operations, and driver services teams around maintenance responsibility, compliance, and support outcomes',
       'Design mentor: guided peer designers through critique, design rationale, and system-based pattern selection',
       'Design system contributor: identified onboarding components and states that could be reused across driver and fleet management workflows'
     ],
 
     approaches: [
-      'Mapped the driver onboarding journey from first notification through account setup, vehicle readiness, task completion, and support escalation',
-      'Synthesized research and stakeholder input into moments of uncertainty, ownership gaps, and decision points that needed clearer UX support',
-      'Defined interaction patterns for progressive task guidance, status visibility, document readiness, and support handoff',
+      'Conducted multiple rounds of research directly with drivers to identify where maintenance expectations, error recovery, and completion requirements broke down',
+      'Mapped preventative maintenance task flows, information architecture, status states, error states, and support escalation paths across the DriverView maintenance section',
+      'Defined interaction patterns for progressive maintenance guidance, status visibility, document readiness, and support handoff',
       'Used design critiques to pressure-test hierarchy, messaging, and edge cases with product and engineering partners',
-      'Connected new patterns back to the Wheels design system so delivery improved the broader product ecosystem instead of creating one-off UI'
+      'Used the React rebuild as a performance and scalability constraint, creating patterns that could support future connected-vehicle integrations'
     ],
 
     leadershipImpact: [
@@ -133,10 +133,10 @@ export const portfolioData = [
     ],
 
     impact: [
-      'Created a cohesive onboarding direction that reduced ambiguity across driver-facing touchpoints and internal delivery conversations',
-      'Improved design-dev clarity by documenting states, content rules, and component usage before implementation',
+      'Improved maintenance task completion and compliance by making responsibility, due dates, and next steps easier to understand',
+      'Reduced support tickets by clarifying maintenance responsibilities, error states, and escalation paths before drivers needed help',
       'Raised design quality through repeatable critique and review practices that made tradeoffs visible to product and engineering partners',
-      'Strengthened the design system by contributing reusable patterns for guided workflows, status communication, and task completion'
+      'Strengthened the design system by contributing reusable patterns for maintenance flows, status communication, error handling, and task completion'
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/wass-documentation.jpg?raw=true',
@@ -156,7 +156,7 @@ export const portfolioData = [
   {
     alias: 'fleet-redeployment',
     title: 'Fleet Redeployment Hub',
-    subtitle: 'AI-Assisted Proof of Concept for Bulk Vehicle Redeployment Workflows',
+    subtitle: 'Human-AI collaboration prototype for faster, confidence-aware fleet redeployment',
     duration: '2025',
 
     tag: [
@@ -207,15 +207,18 @@ export const portfolioData = [
       'Figma',
       'KendoReact',
       'Lovable',
-      'VS Code',
+      'Cursor',
+      'Claude Code',
+      'GitHub Copilot',
+      'Figma MCP',
       'React'
     ],
 
     links: [
-      //  {
-      //   link: 'https://fleet-portal-gold.vercel.app/',
-      //   linkDescription: 'Fleet Redeployment Hub'
-      // },
+      {
+        link: 'https://fleet-portal-gold.vercel.app/',
+        linkDescription: 'Fleet Redeployment Hub Live Prototype'
+      },
       //  {
       //   link: 'https://github.com/davyjonesdesign/fleet-portal/tree/main/fleet%20portal/fleet-portal',
       //   linkDescription: 'Fleet Portal Repository'
