@@ -5,15 +5,12 @@ const Contact = () => {
   return (
     <div className="contact container">
       <p className="eyebrow">Contact</p>
-      <h1>Let's talk about Lead UX and Principal Designer opportunities.</h1>
+      <h1>Let's talk if you need principled UX leadership that still ships.</h1>
       <p className="contact-intro">
-        I'm open to Lead UX Designer and Principal Designer roles focused on UX strategy, design
-        systems, and building design cultures at scale. Remote is preferred, and I am open to hybrid
-        opportunities in Chicagoland.
+        I'm open to Lead UX Designer and Principal Designer roles where the work needs both conviction and humility: strategy, design systems, product clarity, and healthier ways for teams to make decisions. Remote is preferred, and I am open to hybrid opportunities in Chicagoland.
       </p>
       <p className="contact-intro">
-        Interested in discussing UX strategy, design systems, and building design cultures at scale?
-        Reach out by email, connect on LinkedIn, or download my resume.
+        If that sounds like the kind of leadership you need, reach out by email, connect on LinkedIn, or download my resume.
       </p>
 
       <div className="contact-links">

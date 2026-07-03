@@ -11,13 +11,13 @@ const Home = () => {
   return (
     <div className="landing container">
       <div className="landing-hero">
-        <p className="eyebrow">Lead UX Designer · Principal-Scope Product Strategy · Design Systems</p>
-        <h1>UX Strategy &amp; Design Leadership</h1>
+        <p className="eyebrow">Lead UX Designer · Principled Systems · Practical Product Clarity</p>
+        <h1>Principled UX for Messy Enterprise Work</h1>
         <p className="landing-intro">
-          Scaling design excellence across complex organizations. I set UX direction, serve as design authority, and turn ambiguous enterprise workflows into clear product experiences that teams can ship and maintain.
+          I help teams make durable product decisions when the work is complex, political, and easy to overcomplicate. My strength is turning ambiguity into honest, usable systems people can actually ship.
         </p>
         <p className="landing-proof">
-          My work uses design systems as a strategic asset, mentorship as a multiplier, and accessibility as a foundation for products used by expert teams in high-pressure environments.
+          The thread through my work is simple: define the principles, respect the constraints, build the clearest path forward, and keep the experience accountable to the people who rely on it.
         </p>
         <div className="landing-cta">
           <Link to="/work" className="btn btn-primary">
@@ -30,41 +30,41 @@ const Home = () => {
       </div>
 
       <section aria-labelledby="leadership-proof" className="landing-highlights">
-        <h2 id="leadership-proof" className="section-heading">Design Leadership</h2>
+        <h2 id="leadership-proof" className="section-heading">How I Work</h2>
         <div className="highlight-card">
-          <span className="highlight-stat">Strategy</span>
-          <h3>Set direction across ambiguity</h3>
+          <span className="highlight-stat">Clarity</span>
+          <h3>Name the real problem</h3>
           <ul>
-            <li>Translate complex operational goals into product experience strategy.</li>
-            <li>Define outcomes, principles, and decision criteria before interface execution.</li>
-            <li>Use research and workflow evidence to move stakeholders toward shared priorities.</li>
+            <li>Separate symptoms from systems so teams solve the right thing.</li>
+            <li>Use principles and decision criteria before jumping into screens.</li>
+            <li>Ground debates in workflow evidence, not taste or hierarchy.</li>
           </ul>
         </div>
 
         <div className="highlight-card">
-          <span className="highlight-stat">Authority</span>
-          <h3>Raise the bar without direct authority</h3>
+          <span className="highlight-stat">Conviction</span>
+          <h3>Hold the line without posturing</h3>
           <ul>
-            <li>Govern design quality across product, engineering, marketing, and agency teams.</li>
-            <li>Make standards feel enabling by pairing guardrails with practical implementation paths.</li>
-            <li>Use critique, documentation, and facilitation to make better decisions repeatable.</li>
+            <li>Protect quality across product, engineering, marketing, and agency teams.</li>
+            <li>Pair firm standards with practical paths so governance feels useful.</li>
+            <li>Use critique, documentation, and facilitation to make good decisions repeatable.</li>
           </ul>
         </div>
 
         <div className="highlight-card">
-          <span className="highlight-stat">Scale</span>
-          <h3>Build systems teams can trust</h3>
+          <span className="highlight-stat">Stewardship</span>
+          <h3>Build systems that earn trust</h3>
           <ul>
-            <li>Unified three merged companies under one design language.</li>
-            <li>Built and governed 60+ production-ready components with WCAG AA standards.</li>
-            <li>Reduced implementation time by 50% through reusable patterns and documentation.</li>
+            <li>Unified three merged companies under one design language without pretending the constraints were simple.</li>
+            <li>Built and governed 60+ production-ready components with WCAG AA expectations baked in.</li>
+            <li>Reduced implementation time by 50% through reusable patterns, documentation, and fewer repeated decisions.</li>
           </ul>
         </div>
       </section>
 
       <section aria-labelledby="featured-work" className="featured-work-section">
         <div className="section-header-row">
-          <h2 id="featured-work" className="section-heading">Anchor Case Studies</h2>
+          <h2 id="featured-work" className="section-heading">Selected Work</h2>
           <Link to="/work" className="text-link">All work</Link>
         </div>
         <div className="featured-project-grid">

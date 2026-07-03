@@ -56,9 +56,9 @@ const About = () => {
   ];
 
   const cares = [
-    'Building high-performing design cultures where critique, standards, and mentorship help teams do better work together',
+    'Building design cultures where critique is honest, standards are useful, and mentorship helps people grow without theater',
     'Simplifying complex enterprise workflows so people can make confident decisions in high-volume, high-pressure contexts',
-    'Making design governance feel enabling rather than constraining by pairing clear standards with practical contribution paths'
+    'Making design governance feel like stewardship rather than bureaucracy by pairing clear standards with practical contribution paths'
   ];
 
   const experience = [
@@ -69,7 +69,7 @@ const About = () => {
       highlights: [
         'Set UX direction and design system governance across the merged Wheels, Donlen, and LeasePlan USA product ecosystem',
         'Unified three companies under a single design language, delivering 60+ KendoReact components and a feature-rich data grid',
-        'Operated as design authority across product, marketing, engineering, and external agency partners without direct authority',
+        'Operated as a principled design authority across product, marketing, engineering, and external agency partners without direct reporting authority',
         'Established parity between Figma, ThemeBuilder, and Storybook, reducing design-dev churn and improving consistency',
         'Partnered with engineering to optimize workflows, cutting implementation time by 50%',
         'Applied WCAG AA compliance across core components and mentored designers through Figma onboarding and system adoption'
@@ -107,25 +107,19 @@ const About = () => {
   return (
     <div className="about container">
       <p className="eyebrow">About</p>
-      <h1>I set UX strategy and serve as design authority for complex, multi-team enterprise products.</h1>
+      <h1>I bring principled UX leadership to complex, multi-team product work.</h1>
       <p className="about-subtitle">
-        Senior UI Designer operating at principal scope, with 8+ years of experience across UX strategy, product design, design systems, mentorship, and cross-functional leadership.
+        Senior UI Designer operating at principal scope, with 8+ years of experience across UX strategy, product design, design systems, mentorship, and cross-functional leadership — with a bias toward clarity, stewardship, and practical follow-through.
       </p>
 
       <p>
-        I help enterprise product organizations make better design decisions at scale. My work sits
-        where strategy, product complexity, and system governance meet: clarifying the experience
-        direction, aligning stakeholders around tradeoffs, and giving teams standards they can use
-        without slowing down delivery.
+        I help enterprise product organizations make better decisions when the work is ambiguous, cross-functional, and full of competing constraints. I am at my best where strategy, product complexity, and system governance meet: clarifying what matters, naming the tradeoffs, and giving teams standards they can use without slowing down delivery.
       </p>
       <p>
-        At Wheels, Inc., I govern a design system that unifies three merged companies under a single
-        visual and interaction language across web and mobile. That includes owning system boundaries,
-        shaping contribution models, documenting design rationale, and mentoring designers through
-        adoption so quality becomes a shared practice rather than a late-stage review.
+        At Wheels, Inc., I govern a design system that unifies three merged companies under a single visual and interaction language across web and mobile. The real work is not just component coverage; it is stewardship: owning system boundaries, explaining the rationale, making contribution paths clear, and mentoring designers so quality becomes a shared practice instead of a late-stage correction.
       </p>
       <p>
-        I am based in Valparaiso, Indiana and targeting remote Lead UX Designer, Principal Designer, Design Systems Architect, and UX Strategy roles in enterprise tech where cross-functional influence and design culture matter.
+        I am based in Valparaiso, Indiana and targeting remote Lead UX Designer, Principal Designer, Design Systems Architect, and UX Strategy roles in enterprise tech where principled judgment, cross-functional influence, and design culture matter.
       </p>
 
       <a
