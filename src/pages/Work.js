@@ -6,10 +6,9 @@ const Work = () => {
   return (
     <div className="work container">
       <p className="eyebrow">Case Studies</p>
-      <h1>Enterprise UX Strategy, Design Leadership & Systems</h1>
+      <h1>Enterprise UX, Design Systems & Honest Product Decisions</h1>
       <p className="work-intro">
-        Anchor stories focused on design authority, product ownership, cross-functional influence,
-        mentorship, and the operating models that help enterprise teams deliver better experiences at scale.
+        A mix of enterprise systems work, product strategy, and self-directed projects. The common thread is principled decision-making: clarifying the work, naming the tradeoffs, and making useful things that can survive real constraints.
       </p>
 
       <div className="project-list">

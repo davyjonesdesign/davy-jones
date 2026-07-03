@@ -3,7 +3,7 @@ export const portfolioData = [
   {
     alias: 'wheels',
     title: 'Wheels Unified Design System',
-    subtitle: '0-1 design system governance across Wheels, Donlen, and LeasePlan USA',
+    subtitle: 'Principled design system stewardship across Wheels, Donlen, and LeasePlan USA',
     duration: '2023 - Present',
 
     tag: [
@@ -19,11 +19,11 @@ export const portfolioData = [
 
     // Recruiter-focused structure
     challenge:
-      'Following the merger of Wheels, Donlen, and LeasePlan USA, product teams were shipping through three competing UI models with no system governance, no shared contribution rules, and no reliable design-to-code parity. The risk was organizational: inconsistent experiences, slower delivery, accessibility gaps, and repeated implementation decisions across teams. The business needed a system-level operating model that could align product, engineering, marketing, and agency partners while still supporting product-specific needs.',
+      'Following the merger of Wheels, Donlen, and LeasePlan USA, teams were trying to move quickly while carrying three different UI histories. The problem was not only visual inconsistency; it was a lack of shared decision-making. Without clear boundaries, contribution rules, or design-to-code parity, every team had to re-argue the same choices. The business needed a principled operating model that could create unity without flattening every product need.',
 
     myRole: [
-      'Design System Governor: Owned system integrity, boundaries, and evolution across design, engineering, marketing, and external agency partners',
-      'Governance Model Author: Defined where flexibility was allowed and where it was not, and held that line through principled, documented design rationale',
+      'Design System Steward: Owned system integrity, boundaries, and evolution across design, engineering, marketing, and external agency partners',
+      'Governance Model Author: Defined where flexibility was healthy and where consistency needed to be protected, then held that line through documented rationale',
       'Bridge between design and engineering: Ensured 1:1 parity between Figma, ThemeBuilder, and Storybook across KendoReact and React Native Paper',
       'Documentation Lead: Translated system intent into usage principles, decision frameworks, and contribution guidelines teams could follow independently',
       'Mentor and culture builder: Guided designers through Figma migration and system adoption, raising UX maturity across the organization'
@@ -46,9 +46,9 @@ export const portfolioData = [
 
     leadershipImpact: [
       'Led and influenced product, engineering, marketing, and external agency partners across three merged companies without relying on direct reporting authority',
-      'Changed the operating model from local UI decisions to governed, system-level decision making with documented contribution rules and review criteria',
+      'Changed the operating model from local UI opinions to system-level decision making with documented contribution rules and review criteria',
       'Mentored designers through Figma migration, component adoption, and system rationale so design quality could scale beyond one owner',
-      'Made design system contribution explicit in product delivery by connecting every reusable component to Figma, ThemeBuilder, Storybook, and Frontify documentation'
+      'Made design system contribution explicit in product delivery by connecting reusable components to Figma, ThemeBuilder, Storybook, and Frontify documentation'
     ],
 
     impact: [
@@ -92,7 +92,7 @@ export const portfolioData = [
   {
     alias: 'new-driver-experience',
     title: 'New Driver Experience',
-    subtitle: 'Research-led maintenance redesign for fleet managers and drivers, launching July 20, 2025',
+    subtitle: 'Research-led maintenance redesign for drivers and fleet teams navigating real-world compliance work',
     duration: 'Launch: July 20, 2025',
 
     tag: [
@@ -107,7 +107,7 @@ export const portfolioData = [
     mainCap: 'New Driver Experience patterns grounded in the Wheels design system and enterprise workflow research',
 
     challenge:
-      'Drivers were not staying compliant with preventative maintenance because responsibilities, timing, and next actions were unclear. The redesign reframed maintenance as part of the broader vehicle lifecycle, giving drivers and fleet teams a clearer path from notification to task completion.',
+      'Drivers were missing preventative maintenance not because they did not care, but because the product made responsibility, timing, and next actions too easy to misunderstand. The redesign treated maintenance as part of a larger vehicle lifecycle, giving drivers and fleet teams a clearer, more accountable path from notification to task completion.',
 
     myRole: [
       'UX lead from discovery through production: served as design authority for research synthesis, interaction design, validation, and implementation alignment',
@@ -127,7 +127,7 @@ export const portfolioData = [
 
     leadershipImpact: [
       'Led cross-functional alignment around an end-to-end driver journey instead of isolated screen requests',
-      'Influenced product scope by shifting conversations from feature output to onboarding outcomes: clarity, confidence, and reduced avoidable support touchpoints',
+      'Influenced product scope by shifting conversations from feature output to outcomes people could feel: clarity, confidence, and fewer avoidable support touchpoints',
       'Mentored designers on how to use critique, research synthesis, and design system rationale to defend decisions with evidence',
       'Turned product-specific onboarding work into reusable system patterns for tasks, statuses, guidance, and exception handling'
     ],
@@ -156,7 +156,7 @@ export const portfolioData = [
   {
     alias: 'fleet-redeployment',
     title: 'Fleet Redeployment Hub',
-    subtitle: 'Human-AI collaboration prototype for faster, confidence-aware fleet redeployment',
+    subtitle: 'Human-AI collaboration prototype for accountable, confidence-aware fleet redeployment',
     duration: '2025',
 
     tag: [
@@ -171,7 +171,7 @@ export const portfolioData = [
     mainCap: 'Fleet Redeployment Hub, vehicle inventory management with natural language command bar',
 
     challenge:
-      'An enterprise fleet client needed to validate whether AI-assisted interaction patterns could reduce a multi-hour redeployment workflow into a guided, auditable experience. Existing operations depended on fragmented spreadsheets, email threads, and manual status checks, creating high cognitive load and low confidence in action outcomes. The PoC needed to prove a natural language interface could support high-volume decisions while clearly communicating intent, system state, and action confidence.',
+      'An enterprise fleet client needed to validate whether AI-assisted interaction patterns could reduce a multi-hour redeployment workflow into a guided, auditable experience. Existing operations depended on fragmented spreadsheets, email threads, and manual status checks. The design challenge was not to make AI feel magical; it was to make it accountable by communicating intent, system state, confidence, and recovery paths clearly.',
 
     myRole: [
       'Solo designer on the PoC: owned all UX, UI, and design system decisions from concept through handoff-ready prototype',
@@ -192,7 +192,7 @@ export const portfolioData = [
       'Owned UX direction as the solo designer while aligning an engineering architect and enterprise stakeholders around a compressed proof-of-concept scope',
       'Set design authority under constraints by defining what AI-assisted interaction could safely do, where confidence needed to be communicated, and how operators should recover from uncertainty',
       'Created implementation guidance and component specifications that turned prototype decisions into reusable KendoReact patterns',
-      'Used AI-assisted prototyping as a facilitation tool, not a substitute for design judgment, to accelerate iteration while preserving quality'
+      'Used AI-assisted prototyping as a facilitation tool, not a substitute for judgment, to accelerate iteration while preserving quality'
     ],
 
     impact: [
@@ -230,7 +230,7 @@ export const portfolioData = [
   {
     alias: 'budgety',
     title: 'Budgety App',
-    subtitle: 'A personal finance experience that helps users build confidence through clear budgeting habits',
+    subtitle: 'A personal finance concept focused on calm, understandable budgeting habits',
     duration: '2026',
 
     tag: [
@@ -245,7 +245,7 @@ export const portfolioData = [
     mainCap: 'Budgety dashboard focused on monthly planning, category tracking, and savings progress',
 
     challenge:
-      'Early-career professionals often track spending across disconnected bank apps and spreadsheets, which makes it difficult to maintain a clear monthly plan. Budgety was framed as a lightweight budgeting product that turns scattered transaction data into simple, actionable decisions users can trust.',
+      'Budgeting tools can make people feel judged or overwhelmed. Budgety was framed as a lightweight product for early-career professionals who need a clear monthly plan, fewer surprises, and simple decisions they can trust without living inside spreadsheets.',
 
     myRole: [
       'Led end-to-end product design from problem framing and information architecture through high-fidelity UI and prototype flows',
@@ -301,7 +301,7 @@ export const portfolioData = [
   {
     alias: 'wiki-ui',
     title: 'Wikipedia.org UX/UI Redesign',
-    subtitle: 'Self-directed mobile interface redesign emphasizing accessibility and user-centered design',
+    subtitle: 'Self-directed mobile redesign focused on accessibility, hierarchy, and everyday usability',
     duration: 'Winter 2023',
 
     tag: [
@@ -371,7 +371,7 @@ export const portfolioData = [
   {
     alias: 'streamline-app',
     title: 'Streamline App',
-    subtitle: 'Video streaming platform consolidating content from multiple apps, demonstrating end-to-end UX process',
+    subtitle: 'Student research project exploring the frustration of finding something to watch across too many apps',
     duration: 'Spring 2023',
 
     tag: [
@@ -438,7 +438,7 @@ export const portfolioData = [
   {
     alias: 'written-in-stone',
     title: 'Written in Stone App',
-    subtitle: 'Full-stack capstone, interactive web app surfacing biblical geography and historical context through map-based exploration, built in Vue with Leaflet',
+    subtitle: 'Full-stack capstone exploring biblical geography and historical context through map-based discovery',
     duration: 'Summer 2023',
 
     tag: [
