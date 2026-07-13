@@ -8,8 +8,8 @@ export const portfolioData = [
 
     tag: [
       'Design System',
-      'Leadership',
-      'React',
+      'Product Discovery',
+      'Design-to-Development',
       'Mobile',
       'Accessibility'
     ],
@@ -20,6 +20,12 @@ export const portfolioData = [
     // Recruiter-focused structure
     challenge:
       'Following the merger of Wheels, Donlen, and LeasePlan USA, teams were trying to move quickly while carrying three different UI histories. The problem was not only visual inconsistency; it was a lack of shared decision-making. Without clear boundaries, contribution rules, or design-to-code parity, every team had to re-argue the same choices. The business needed a principled operating model that could create unity without flattening every product need.',
+
+    discovery: [
+      'Audited overlapping UI histories across Wheels, Donlen, and LeasePlan USA to understand where inconsistency slowed product delivery',
+      'Gathered input from product, engineering, marketing, and external agency partners to identify system gaps and governance needs',
+      'Mapped design-to-code workflows across Figma, ThemeBuilder, Storybook, and Frontify to expose parity issues and repeated decisions'
+    ],
 
     myRole: [
       'Design System Steward: Owned system integrity, boundaries, and evolution across design, engineering, marketing, and external agency partners',
@@ -97,7 +103,7 @@ export const portfolioData = [
 
     tag: [
       'UX Strategy',
-      'Product Ownership',
+      'Product Discovery',
       'Mentorship',
       'Design System',
       'Enterprise'
@@ -108,6 +114,12 @@ export const portfolioData = [
 
     challenge:
       'Drivers were missing preventative maintenance not because they did not care, but because the product made responsibility, timing, and next actions too easy to misunderstand. The redesign treated maintenance as part of a larger vehicle lifecycle, giving drivers and fleet teams a clearer, more accountable path from notification to task completion.',
+
+    discovery: [
+      'Conducted driver research to understand why preventative maintenance tasks were missed or misunderstood',
+      'Mapped maintenance workflows, status states, error recovery, and support escalation paths across the driver journey',
+      'Aligned Product, Engineering, Operations, and Driver Services around responsibility, compliance, and measurable support outcomes'
+    ],
 
     myRole: [
       'UX lead from discovery through production: served as design authority for research synthesis, interaction design, validation, and implementation alignment',
@@ -173,6 +185,12 @@ export const portfolioData = [
     challenge:
       'An enterprise fleet client needed to validate whether AI-assisted interaction patterns could reduce a multi-hour redeployment workflow into a guided, auditable experience. Existing operations depended on fragmented spreadsheets, email threads, and manual status checks. The design challenge was not to make AI feel magical; it was to make it accountable by communicating intent, system state, confidence, and recovery paths clearly.',
 
+    discovery: [
+      'Analyzed how operators coordinated redeployment across spreadsheets, email threads, and manual vehicle status checks',
+      'Worked with enterprise stakeholders and an engineering architect to define what an AI-assisted PoC needed to prove',
+      'Identified trust requirements for AI interaction, including intent, system state, confidence, scope, and recovery paths'
+    ],
+
     myRole: [
       'Solo designer on the PoC: owned all UX, UI, and design system decisions from concept through handoff-ready prototype',
       'Design-to-development bridge: translated Figma designs into KendoReact implementation using AI-assisted front-end tooling (Lovable) and VS Code',
@@ -234,8 +252,8 @@ export const portfolioData = [
     duration: '2026',
 
     tag: [
-      'UX/UI',
-      'React',
+      'Product Discovery',
+      'Rapid Prototyping',
       'Personal Finance',
       'Product Design',
       'Dashboard'
@@ -246,6 +264,12 @@ export const portfolioData = [
 
     challenge:
       'Budgeting tools can make people feel judged or overwhelmed. Budgety was framed as a lightweight product for early-career professionals who need a clear monthly plan, fewer surprises, and simple decisions they can trust without living inside spreadsheets.',
+
+    discovery: [
+      'Framed the product around early-career professionals who need a clear monthly plan without spreadsheet-level complexity',
+      'Mapped budgeting jobs-to-be-done around setup, category monitoring, bill reminders, and savings progress',
+      'Used rapid feedback rounds to validate layout, tone, and interaction patterns before refining the prototype'
+    ],
 
     myRole: [
       'Led end-to-end product design from problem framing and information architecture through high-fidelity UI and prototype flows',

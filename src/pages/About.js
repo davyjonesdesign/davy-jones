@@ -4,53 +4,47 @@ import { Download } from 'lucide-react';
 const About = () => {
   const skillGroups = [
     {
-      title: 'Strategy & Vision',
+      title: 'Product',
       skills: [
-        'UX Strategy & Direction',
-        'Design Systems Governance',
-        'Experience Architecture',
-        'Product Roadmap Influence',
-        'Cross-Functional Alignment'
+        'Product Discovery',
+        'Requirements Gathering',
+        'UX Research',
+        'Workflow Analysis',
+        'Information Architecture'
       ]
     },
     {
-      title: 'Design Craft',
+      title: 'UX & Design',
       skills: [
         'Interaction Design',
-        'Information Architecture',
-        'User Research & Testing',
-        'Wireframing & Prototyping',
+        'Prototyping',
+        'Accessibility',
+        'Design Systems',
         'Visual Design'
       ]
     },
     {
-      title: 'Design Systems',
+      title: 'Engineering Collaboration',
       skills: [
+        'Figma',
+        'KendoReact',
+        'ThemeBuilder',
+        'Design Tokens',
         'Component Architecture',
-        'Token Strategy & Management',
-        'Design Governance Frameworks',
-        'Accessibility (WCAG AA)',
-        'Inclusive Design'
+        'Documentation',
+        'GitHub',
+        'VS Code'
       ]
     },
     {
-      title: 'Leadership & Culture',
+      title: 'AI',
       skills: [
-        'Design Mentorship',
-        'Team Coaching',
-        'Design Critique & Reviews',
-        'Design Culture Evolution',
-        'Stakeholder Communication'
-      ]
-    },
-    {
-      title: 'Tools & Technical',
-      skills: [
-        'Figma component architecture, variables, and design tokens',
-        'User research tools',
-        'Principle, Framer, and Lovable prototyping',
-        'Cursor, Claude Code, GitHub Copilot, and Figma MCP',
-        'React, TypeScript, JavaScript, HTML, CSS, Vue, and Git'
+        'Claude',
+        'GitHub Copilot',
+        'Lovable',
+        'Figma MCP',
+        'Prompt Engineering',
+        'AI DesignOps'
       ]
     }
   ];
@@ -107,19 +101,19 @@ const About = () => {
   return (
     <div className="about container">
       <p className="eyebrow">About</p>
-      <h1>I bring principled UX leadership to complex, multi-team product work.</h1>
+      <h1>I work at the intersection of Product, UX, Design Systems, Engineering, and AI.</h1>
       <p className="about-subtitle">
-        Senior UI Designer operating at principal scope, with 8+ years of experience across UX strategy, product design, design systems, mentorship, and cross-functional leadership — with a bias toward clarity, stewardship, and practical follow-through.
+        Senior UI Designer with 8+ years of experience helping teams turn complex operational problems into scalable product experiences, reusable systems, and production-ready solutions.
       </p>
 
       <p>
-        I help enterprise product organizations make better decisions when the work is ambiguous, cross-functional, and full of competing constraints. I am at my best where strategy, product complexity, and system governance meet: clarifying what matters, naming the tradeoffs, and giving teams standards they can use without slowing down delivery.
+        Over the past several years my role has naturally evolved beyond UI design into product discovery, design systems, and improving how Product, Engineering, and UX work together. I enjoy taking complex operational problems, understanding user needs, rapidly exploring solutions, and helping teams move efficiently from ideas to production.
       </p>
       <p>
-        At Wheels, Inc., I govern a design system that unifies three merged companies under a single visual and interaction language across web and mobile. The real work is not just component coverage; it is stewardship: owning system boundaries, explaining the rationale, making contribution paths clear, and mentoring designers so quality becomes a shared practice instead of a late-stage correction.
+        My work is grounded in systems thinking: clarifying requirements, mapping workflows, identifying constraints, and translating ambiguity into reusable patterns, accessible experiences, and implementation guidance. I care about the space between design intent and production reality, where documentation, design tokens, component architecture, and engineering collaboration determine whether good ideas scale.
       </p>
       <p>
-        I am based in Valparaiso, Indiana and targeting remote Lead UX Designer, Principal Designer, Design Systems Architect, and UX Strategy roles in enterprise tech where principled judgment, cross-functional influence, and design culture matter.
+        I also use AI-assisted workflows thoughtfully to improve speed and clarity across prototyping, documentation, context engineering, and DesignOps. The goal is not to replace design judgment, but to help cross-functional teams learn faster, communicate better, and reduce handoff friction.
       </p>
 
       <a
@@ -135,7 +129,7 @@ const About = () => {
 
       <hr />
 
-      <h2>Skills & Competencies</h2>
+      <h2>Skills</h2>
       {skillGroups.map((group) => (
         <section key={group.title} className="skill-group" aria-labelledby={`${group.title}-heading`}>
           <h3 id={`${group.title}-heading`}>{group.title}</h3>

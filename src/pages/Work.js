@@ -6,9 +6,9 @@ const Work = () => {
   return (
     <div className="work container">
       <p className="eyebrow">Case Studies</p>
-      <h1>Enterprise UX, Design Systems & Honest Product Decisions</h1>
+      <h1>Product Thinking, Systems Thinking & Design-to-Development Collaboration</h1>
       <p className="work-intro">
-        A mix of enterprise systems work, product strategy, and self-directed projects. The common thread is principled decision-making: clarifying the work, naming the tradeoffs, and making useful things that can survive real constraints.
+        Case studies focused on the product story behind the interface: the business problem, discovery work, cross-functional approach, and outcomes that improved usability, consistency, scalability, accessibility, and delivery speed.
       </p>
 
       <div className="project-list">
