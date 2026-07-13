@@ -59,12 +59,27 @@ const ProjectDetail = () => {
 
         <hr />
 
-        {/* Challenge */}
+        {/* Problem */}
         {project.challenge && (
           <>
             <section>
-              <h2>Challenge</h2>
+              <h2>Problem</h2>
               <p>{project.challenge}</p>
+            </section>
+            <hr />
+          </>
+        )}
+
+        {/* Discovery */}
+        {project.discovery && (
+          <>
+            <section>
+              <h2>Discovery</h2>
+              <ul>
+                {project.discovery.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
             </section>
             <hr />
           </>
@@ -318,7 +333,7 @@ const ProjectDetail = () => {
         {project.tools && (
           <>
             <section>
-              <h2>Tools & Technologies</h2>
+              <h2>Tools &amp; Technologies</h2>
               <p>{project.tools.join(' · ')}</p>
             </section>
           </>
