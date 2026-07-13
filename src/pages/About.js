@@ -117,7 +117,7 @@ const About = () => {
       </p>
 
       <a
-        href="/files/JonesDavy_Resume.doc"
+        href="/files/Davy_Jones_Resume_2026.doc"
         download="JonesDavy_Resume.doc"
         className="btn btn-primary"
         aria-label="Download resume as PDF"
