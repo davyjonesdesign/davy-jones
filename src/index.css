@@ -577,17 +577,18 @@ nav {
   flex-wrap: wrap;
   gap: var(--spacing-sm);
   padding-left: 0;
-  margin: 0 0 var(--spacing-md) -16px;
+  margin: 0 0 -4px -8px;
+  padding-top: var(--spacing-xs);
 }
 
 .highlight-tags li {
   margin: 0;
-  padding: 0.3rem 0.65rem;
+  padding: 0 var(--spacing-sm);
   border-radius: 999px;
   background-color: var(--color-hover-background);
   border: 1px solid var(--color-border);
   color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
 }
 
 .highlight-card-featured .btn {
@@ -758,6 +759,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2xl);
+  margin-top: var(--spacing-2xl);
 }
 
 .project-item {
@@ -1198,6 +1200,7 @@ nav {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-relaxed);
+  margin-top: var(--spacing-xl);
 }
 
 .landing-highlights .section-heading {

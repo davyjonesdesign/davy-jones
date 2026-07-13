@@ -50,7 +50,7 @@ const Navigation = () => {
     <nav role="navigation" aria-label="Main navigation">
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={handleLinkClick}>
-          David Jones
+          Davy Jones
         </Link>
         
         {/* Desktop Navigation */}

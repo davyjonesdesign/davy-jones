@@ -58,8 +58,8 @@ const Home = () => {
   return (
     <div className="landing container">
       <div className="landing-hero">
-        <p className="eyebrow">Senior UI Designer</p>
-        <h1>Senior UI Designer</h1>
+        <p className="eyebrow">Current role: Senior UI Designer</p>
+        <h1>From complex problems to scalable digital products.</h1>
         <p className="landing-intro">
           Specializing in product discovery, enterprise design systems, AI-assisted prototyping, and design-to-development collaboration.
         </p>
