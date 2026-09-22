@@ -39,8 +39,8 @@ const Contact = () => {
         </a>
 
         <a
-          href="/files/JonesDavy_Resume_2026_st.pdf"
-          download="Resume_Jones-David_2026.pdf"
+          href="/files/Davy_Jones_Resume_2026.doc"
+          download="Davy_Jones_Resume.doc"
           className="contact-link"
         >
           <Download size={24} />
