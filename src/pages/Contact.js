@@ -26,7 +26,7 @@ const Contact = () => {
         </a>
 
         <a
-          href="https://linkedin.com/in/dmjonesme"
+          href="https://www.linkedin.com/in/davyjonesme/"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"
@@ -34,7 +34,7 @@ const Contact = () => {
           <Linkedin size={24} />
           <div>
             <strong>LinkedIn</strong>
-            <p style={{margin: 0, fontSize: '0.875rem', color: 'var(--color-text-tertiary)'}}>linkedin.com/in/dmjonesme</p>
+            <p style={{margin: 0, fontSize: '0.875rem', color: 'var(--color-text-tertiary)'}}>linkedin.com/in/davyjonesme</p>
           </div>
         </a>
 
