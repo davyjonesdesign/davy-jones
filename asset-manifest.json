@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa35074b.css",
-    "main.js": "/static/js/main.2692fb18.js",
+    "main.css": "/static/css/main.c46c1eba.css",
+    "main.js": "/static/js/main.b6a8daae.js",
     "static/js/453.7b2b088a.chunk.js": "/static/js/453.7b2b088a.chunk.js",
+    "static/media/enterprise-design-systems.svg": "/static/media/enterprise-design-systems.7a8eb00648a1a3b3b0ce9c936e7b28c6.svg",
+    "static/media/ai-design-workflow.svg": "/static/media/ai-design-workflow.87d4dff9a7efd47d08bc7aebbb1fb2a9.svg",
     "index.html": "/index.html",
-    "main.fa35074b.css.map": "/static/css/main.fa35074b.css.map",
-    "main.2692fb18.js.map": "/static/js/main.2692fb18.js.map",
+    "static/media/design-to-dev-collab.svg": "/static/media/design-to-dev-collab.27361083187e374edb68573442c419d8.svg",
+    "main.c46c1eba.css.map": "/static/css/main.c46c1eba.css.map",
+    "main.b6a8daae.js.map": "/static/js/main.b6a8daae.js.map",
     "453.7b2b088a.chunk.js.map": "/static/js/453.7b2b088a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa35074b.css",
-    "static/js/main.2692fb18.js"
+    "static/css/main.c46c1eba.css",
+    "static/js/main.b6a8daae.js"
   ]
 }
