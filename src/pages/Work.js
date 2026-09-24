@@ -6,13 +6,15 @@ const Work = () => {
   return (
     <div className="work container">
       <p className="eyebrow">Case Studies</p>
-      <h1>Product Thinking, Systems Thinking & Design-to-Development Collaboration</h1>
+      <h1>A few projects where I helped make complex work clearer.</h1>
       <p className="work-intro">
-        Case studies focused on the product story behind the interface: the business problem, discovery work, cross-functional approach, and outcomes that improved usability, consistency, scalability, accessibility, and delivery speed.
+        These case studies show how I move from a messy problem to a usable product, a stronger system, and a clearer handoff.
       </p>
 
       <div className="project-list">
-        {portfolioData.map((project, idx) => (
+        {portfolioData
+          .filter((project) => !project.hidden)
+          .map((project, idx) => (
           <Link
             key={idx}
             to={`/work/${project.alias}`}

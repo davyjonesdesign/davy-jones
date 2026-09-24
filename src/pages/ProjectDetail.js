@@ -4,20 +4,54 @@ import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import ImageWithSkeleton from '../components/ImageWithSkeleton';
 
+const ProjectImage = ({ src, alt, caption, gallery = false }) => (
+  <div>
+    <ImageWithSkeleton
+      src={src}
+      alt={alt}
+      className={`project-section-image${gallery ? ' project-gallery-image' : ''}`}
+    />
+    {caption && <p className="image-caption">{caption}</p>}
+  </div>
+);
+
+const ProcessStep = ({ index, children }) => (
+  <li className="project-process-step">
+    <span className="project-process-number" aria-hidden="true">
+      {String(index + 1).padStart(2, '0')}
+    </span>
+    <div className="project-process-content">{children}</div>
+  </li>
+);
+
 const ProjectDetail = () => {
   const { alias } = useParams();
-  const project = portfolioData.find(p => p.alias === alias);
+  const project = portfolioData.find((item) => item.alias === alias);
 
   if (!project) {
     return (
       <div className="project-detail container">
         <p>Project not found</p>
         <Link to="/work" className="back-link">
-          ← Back to work
+          <ArrowLeft size={18} />
+          Back to work
         </Link>
       </div>
     );
   }
+
+  const work = project.work || project.myRole || project.discovery || project.method || project.objectives;
+  const results = project.results || project.impact || project.outcome;
+  const supportingImages = [
+    {src: project.overviewImg, caption: project.overviewCap},
+    {src: project.methodImg, caption: project.methodCap},
+    {src: project.outcomeImg, caption: project.outcomeCap}
+  ].filter((image, index, images) => image.src && images.findIndex((item) => item.src === image.src) === index);
+  const supportingFrames = [
+    {src: project.overviewFrame, caption: project.overviewCap},
+    {src: project.methodFrame, caption: project.methodCap},
+    {src: project.outcomeFrame, caption: project.outcomeCap}
+  ].filter((frame) => frame.src);
 
   return (
     <div className="project-detail container">
@@ -27,328 +61,150 @@ const ProjectDetail = () => {
       </Link>
 
       <article>
-        {/* Header */}
         <header>
           <h1>{project.title}</h1>
           <p className="project-detail-subtitle">{project.subtitle}</p>
           <p className="project-detail-duration">{project.duration}</p>
-          
           <div className="project-tags">
-            {project.tag.map((tag, i) => (
-              <span key={i}>
+            {project.tag.map((tag, index) => (
+              <span key={tag}>
                 {tag}
-                {i < project.tag.length - 1 && ' ·'}
+                {index < project.tag.length - 1 && ' ·'}
               </span>
             ))}
           </div>
         </header>
 
-        {/* Hero Image */}
         {project.mainImg && (
-          <div>
-            <ImageWithSkeleton 
-              src={project.mainImg} 
-              alt={project.title}
-              className="project-hero-image"
-            />
-            {project.mainCap && (
-              <p className="image-caption">{project.mainCap}</p>
-            )}
-          </div>
+          <ProjectImage
+            src={project.mainImg}
+            alt={project.title}
+            caption={project.mainCap}
+          />
         )}
 
-        <hr />
-
-        {/* Problem */}
         {project.challenge && (
           <>
+            <hr />
             <section>
               <h2>Problem</h2>
               <p>{project.challenge}</p>
             </section>
-            <hr />
           </>
         )}
 
-        {/* Discovery */}
-        {project.discovery && (
+        {work && (
           <>
+            <hr />
             <section>
-              <h2>Discovery</h2>
-              <ul>
-                {project.discovery.map((item, idx) => (
-                  <li key={idx}>{item}</li>
+              <h2>{project.work ? 'What I did' : 'Approach'}</h2>
+              {Array.isArray(work) ? (
+                <ul>{work.map((item) => <li key={item}>{item}</li>)}</ul>
+              ) : (
+                <p>{work}</p>
+              )}
+            </section>
+          </>
+        )}
+
+        {results && (
+          <>
+            <hr />
+            <section>
+              <h2>{project.results ? 'Result' : 'Outcome'}</h2>
+              {Array.isArray(results) ? (
+                <ul>{results.map((item) => <li key={item}>{item}</li>)}</ul>
+              ) : (
+                <p>{results}</p>
+              )}
+            </section>
+          </>
+        )}
+
+        {!project.gallery && (supportingImages.length > 0 || supportingFrames.length > 0) && (
+          <>
+            <hr />
+            <section>
+              <h2>Process</h2>
+              <ol className="project-process-timeline">
+                {supportingImages.map((image, index) => (
+                  <ProcessStep key={`image-${index}-${image.src}`} index={index}>
+                    <ProjectImage
+                      src={image.src}
+                      alt={`${project.title} process visual`}
+                      caption={image.caption}
+                      gallery
+                    />
+                  </ProcessStep>
                 ))}
-              </ul>
-            </section>
-            <hr />
-          </>
-        )}
-
-        {/* Objectives (for side projects) */}
-        {project.objectives && (
-          <>
-            <section>
-              <h2>Objectives</h2>
-              <ul>
-                {project.objectives.map((obj, idx) => (
-                  <li key={idx}>{obj}</li>
+                {supportingFrames.map((frame, index) => (
+                  <ProcessStep key={`frame-${index}-${frame.src}`} index={supportingImages.length + index}>
+                    <iframe
+                      className="project-process-frame"
+                      src={frame.src}
+                      width="100%"
+                      height="500"
+                      title={`${project.title} process reference`}
+                    />
+                    {frame.caption && <p className="image-caption">{frame.caption}</p>}
+                  </ProcessStep>
                 ))}
-              </ul>
+              </ol>
             </section>
-            <hr />
           </>
         )}
 
-        {/* Overview (for side projects) */}
-        {project.overview && (
+        {project.gallery && (
           <>
-            <section>
-              <h2>Overview</h2>
-              {project.overview.map((para, idx) => (
-                <p key={idx}>{para}</p>
-              ))}
-              
-              {/* Overview Image/Frame */}
-              {project.overviewImg && (
-                <div>
-                  <ImageWithSkeleton 
-                    src={project.overviewImg} 
-                    alt="Overview"
-                    className="project-section-image"
-                  />
-                  {project.overviewCap && (
-                    <p className="image-caption">{project.overviewCap}</p>
-                  )}
-                </div>
-              )}
-              {project.overviewFrame && (
-                <div>
-                  <iframe
-                    src={project.overviewFrame}
-                    width="100%"
-                    height="500"
-                    style={{border: 'none', borderRadius: '8px'}}
-                    title="Overview"
-                  />
-                  {project.overviewCap && (
-                    <p className="image-caption">{project.overviewCap}</p>
-                  )}
-                </div>
-              )}
-            </section>
             <hr />
-          </>
-        )}
-
-        {/* My Role */}
-        {project.myRole && (
-          <>
             <section>
-              <h2>My Role</h2>
-              <ul>
-                {project.myRole.map((role, idx) => (
-                  <li key={idx}>{role}</li>
+              <h2>Process</h2>
+              <ol className="project-process-timeline">
+                {project.gallery.map((image, index) => (
+                  <ProcessStep key={`gallery-${index}-${image.src}`} index={index}>
+                    <ProjectImage
+                      src={image.src}
+                      alt={image.caption}
+                      caption={image.caption}
+                      gallery
+                    />
+                    {image.link && (
+                      <a
+                        href={image.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        <ExternalLink size={16} style={{display: 'inline', marginRight: '0.5rem'}} />
+                        {image.linkDescription || 'Open related prototype'}
+                      </a>
+                    )}
+                  </ProcessStep>
                 ))}
-              </ul>
+              </ol>
             </section>
-            <hr />
           </>
         )}
 
-        {/* Leadership & Impact */}
-        {project.leadershipImpact && (
-          <>
-            <section>
-              <h2>Leadership &amp; Impact</h2>
-              <ul>
-                {project.leadershipImpact.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-            </section>
-            <hr />
-          </>
-        )}
-
-        {/* Approach */}
-        {project.approaches && (
-          <>
-            <section>
-              <h2>Approach</h2>
-              <ul>
-                {project.approaches.map((approach, idx) => (
-                  <li key={idx}>{approach}</li>
-                ))}
-              </ul>
-              
-              {/* Overview Image (for Wheels project) */}
-              {project.overviewImg && (
-                <div>
-                  <ImageWithSkeleton 
-                    src={project.overviewImg} 
-                    alt="Overview"
-                    className="project-section-image"
-                  />
-                  {project.overviewCap && (
-                    <p className="image-caption">{project.overviewCap}</p>
-                  )}
-                </div>
-              )}
-            </section>
-            <hr />
-          </>
-        )}
-
-        {/* Method (for side projects) */}
-        {project.method && (
-          <>
-            <section>
-              <h2>Method</h2>
-              <ul>
-                {project.method.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-              
-              {/* Method Image/Frame */}
-              {project.methodImg && (
-                <div>
-                  <ImageWithSkeleton 
-                    src={project.methodImg} 
-                    alt="Method"
-                    className="project-section-image"
-                  />
-                  {project.methodCap && (
-                    <p className="image-caption">{project.methodCap}</p>
-                  )}
-                </div>
-              )}
-              {project.methodFrame && (
-                <div>
-                  <iframe
-                    src={project.methodFrame}
-                    width="100%"
-                    height="500"
-                    style={{border: 'none', borderRadius: '8px'}}
-                    title="Method"
-                  />
-                  {project.methodCap && (
-                    <p className="image-caption">{project.methodCap}</p>
-                  )}
-                </div>
-              )}
-            </section>
-            <hr />
-          </>
-        )}
-
-        {/* Impact */}
-        {project.impact && (
-          <>
-            <section>
-              <h2>Outcomes</h2>
-              <ul>
-                {project.impact.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-              
-              {/* Method Image (for Wheels showing implementation) */}
-              {project.methodImg && (
-                <div>
-                  <ImageWithSkeleton 
-                    src={project.methodImg} 
-                    alt="Implementation"
-                    className="project-section-image"
-                  />
-                  {project.methodCap && (
-                    <p className="image-caption">{project.methodCap}</p>
-                  )}
-                </div>
-              )}
-              
-              {/* Outcome Image */}
-              {project.outcomeImg && (
-                <div>
-                  <ImageWithSkeleton 
-                    src={project.outcomeImg} 
-                    alt="Impact"
-                    className="project-section-image"
-                  />
-                  {project.outcomeCap && (
-                    <p className="image-caption">{project.outcomeCap}</p>
-                  )}
-                </div>
-              )}
-            </section>
-            <hr />
-          </>
-        )}
-
-        {/* Outcome (for side projects) */}
-        {project.outcome && (
-          <>
-            <section>
-              <h2>Outcome</h2>
-              <ul>
-                {project.outcome.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-              
-              {/* Outcome Image/Frame */}
-              {project.outcomeImg && (
-                <div>
-                  <ImageWithSkeleton 
-                    src={project.outcomeImg} 
-                    alt="Outcome"
-                    className="project-section-image"
-                  />
-                  {project.outcomeCap && (
-                    <p className="image-caption">{project.outcomeCap}</p>
-                  )}
-                </div>
-              )}
-              {project.outcomeFrame && (
-                <div>
-                  <iframe
-                    src={project.outcomeFrame}
-                    width="100%"
-                    height="500"
-                    style={{border: 'none', borderRadius: '8px'}}
-                    title="Outcome"
-                  />
-                  {project.outcomeCap && (
-                    <p className="image-caption">{project.outcomeCap}</p>
-                  )}
-                </div>
-              )}
-            </section>
-            <hr />
-          </>
-        )}
-
-        {/* Tools */}
         {project.tools && (
           <>
+            <hr />
             <section>
-              <h2>Tools &amp; Technologies</h2>
+              <h2>Tools</h2>
               <p>{project.tools.join(' · ')}</p>
             </section>
           </>
         )}
 
-        {/* Links */}
         {project.links && project.links.length > 0 && (
           <>
             <hr />
             <section>
               <h2>Links</h2>
               <div className="project-links">
-                {project.links.map((link, idx) => (
+                {project.links.map((link) => (
                   <a
-                    key={idx}
+                    key={link.link}
                     href={link.link}
                     target="_blank"
                     rel="noopener noreferrer"

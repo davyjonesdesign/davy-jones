@@ -4,86 +4,81 @@ import { Download } from 'lucide-react';
 const About = () => {
   const skillGroups = [
     {
-      title: 'Product',
+      title: 'UI & UX Design',
       skills: [
-        'Product Discovery',
-        'Requirements Gathering',
-        'UX Research',
-        'Workflow Analysis',
-        'Information Architecture'
-      ]
-    },
-    {
-      title: 'UX & Design',
-      skills: [
+        'Complex Operational Workflows',
+        'Dashboard & Data-Dense UI',
+        'Visual Hierarchy & Typography',
         'Interaction Design',
-        'Prototyping',
-        'Accessibility',
-        'Design Systems',
-        'Visual Design'
+        'User Journey Mapping',
+        'Rapid Prototyping'
       ]
     },
     {
-      title: 'Engineering Collaboration',
+      title: 'Design Systems',
       skills: [
-        'Figma',
-        'KendoReact',
-        'ThemeBuilder',
-        'Design Tokens',
+        'Enterprise Design Systems',
         'Component Architecture',
-        'Documentation',
-        'GitHub',
-        'VS Code'
+        'Design Tokens',
+        'Design-to-Development Workflows',
+        'Web Accessibility (WCAG AA)',
+        'KendoReact',
+        'Storybook'
       ]
     },
     {
-      title: 'AI',
+      title: 'AI & Emerging Workflows',
       skills: [
-        'Claude',
+        'Claude Code',
         'GitHub Copilot',
-        'Lovable',
         'Figma MCP',
-        'Prompt Engineering',
-        'AI DesignOps'
+        'Lovable',
+        'AI-Assisted Prototyping',
+        'Context Engineering',
+        'DesignOps'
+      ]
+    },
+    {
+      title: 'Cross-Functional Leadership',
+      skills: [
+        'Engineering Partnership',
+        'UX Governance & Stewardship',
+        'Design Reviews',
+        'Agile Delivery',
+        'Technical Communication'
       ]
     }
-  ];
-
-  const cares = [
-    'Building design cultures where critique is honest, standards are useful, and mentorship helps people grow without theater',
-    'Simplifying complex enterprise workflows so people can make confident decisions in high-volume, high-pressure contexts',
-    'Making design governance feel like stewardship rather than bureaucracy by pairing clear standards with practical contribution paths'
   ];
 
   const experience = [
     {
       title: 'Senior UI Designer',
       company: 'Wheels, Inc.',
-      period: 'Apr 2024 – Present',
+      period: 'Apr 2024 - Present',
       highlights: [
-        'Set UX direction and design system governance across the merged Wheels, Donlen, and LeasePlan USA product ecosystem',
-        'Unified three companies under a single design language, delivering 60+ KendoReact components and a feature-rich data grid',
-        'Operated as a principled design authority across product, marketing, engineering, and external agency partners without direct reporting authority',
-        'Established parity between Figma, ThemeBuilder, and Storybook, reducing design-dev churn and improving consistency',
-        'Partnered with engineering to optimize workflows, cutting implementation time by 50%',
-        'Applied WCAG AA compliance across core components and mentored designers through Figma onboarding and system adoption'
+        'Set UX direction, component architecture, and design system governance across the merged Wheels, Donlen, and LeasePlan USA product ecosystems spanning desktop, web, and mobile surfaces',
+        'Unified three legacy organizations under a single enterprise design language, delivering 60+ production KendoReact components, accessible interaction patterns, and a feature-rich data grid',
+        'Established parity between Figma, ThemeBuilder, and Storybook, eliminating implementation ambiguity and cutting developer turnaround time by up to 50%',
+        'Designed complex multi-step transactional flows and data-dense operational surfaces, including FleetView 4.0, New Driver Experience, Mileage Entry, and Book Appointment',
+        'Embedded WCAG AA accessibility into foundational design tokens and core UI components, ensuring new feature releases remain inclusive by default',
+        'Explored and integrated AI-assisted workflows using GitHub Copilot, Claude Code, Figma MCP, and Lovable for rapid prototyping, documentation generation, and context engineering'
       ]
     },
     {
       title: 'UI/UX Designer II',
       company: 'Wheels, Inc.',
-      period: 'Aug 2020 – Apr 2024',
+      period: 'Aug 2020 - Apr 2024',
       highlights: [
-        'Owned end-to-end product design for complex enterprise workflows across web and mobile surfaces',
-        'Led migration to Figma and trained cross-functional teams, accelerating design adoption and shared workflow maturity',
-        'Directed flagship platform redesign work that created a unified user experience across web and mobile',
-        'Embedded accessibility standards into product design workflows to improve delivery quality before development handoff'
+        'Spearheaded the organization-wide migration to Figma as the primary design tool, establishing token strategies, reusable libraries, and component structures that formed the baseline for the enterprise design system',
+        'Designed end-to-end enterprise interfaces for fleet managers, drivers, and internal operations teams, standardizing contrast, typography, and state behaviors',
+        'Co-designed handoff workflows with UI development principals, producing comprehensive UX specs and QA-aligned documentation that reduced rework and improved release consistency',
+        'Partnered across Marketing Cloud and reporting teams, including Tableau, to extend core system patterns into adjacent digital touchpoints'
       ]
     },
     {
       title: 'Design Consultant',
       company: 'Purdue University Northwest',
-      period: 'Feb 2023 – Apr 2023',
+      period: 'Feb 2023 - Apr 2023',
       highlights: [
         'Led redesign of the NLN Center of Excellence application and secured stakeholder buy-in through high-fidelity prototypes'
       ]
@@ -91,9 +86,9 @@ const About = () => {
     {
       title: 'UX/UI Designer',
       company: 'Central Wire Industries',
-      period: 'Apr 2019 – Mar 2020',
+      period: 'Apr 2019 - Mar 2020',
       highlights: [
-        'Developed design governance documentation and partnered with developers to deliver scalable UI solutions'
+        'Established design governance documentation and collaborated with web developers to standardize typography, color usage, and reusable UI components across digital channels'
       ]
     }
   ];
@@ -101,24 +96,21 @@ const About = () => {
   return (
     <div className="about container">
       <p className="eyebrow">About</p>
-      <h1>I work at the intersection of Product, UX, Design Systems, Engineering, and AI.</h1>
+      <h1>I design products, systems, and the way teams work together.</h1>
       <p className="about-subtitle">
-        Senior UI Designer with 8+ years of experience helping teams turn complex operational problems into scalable product experiences, reusable systems, and production-ready solutions.
+        I am a systems-oriented Senior UI Designer with over six years of enterprise experience making complex workflows easier to understand and build.
       </p>
 
       <p>
-        Over the past several years my role has naturally evolved beyond UI design into product discovery, design systems, and improving how Product, Engineering, and UX work together. I enjoy taking complex operational problems, understanding user needs, rapidly exploring solutions, and helping teams move efficiently from ideas to production.
+        I work across product design, design systems, and engineering collaboration. I care about the details that help a good idea survive contact with production.
       </p>
       <p>
-        My work is grounded in systems thinking: clarifying requirements, mapping workflows, identifying constraints, and translating ambiguity into reusable patterns, accessible experiences, and implementation guidance. I care about the space between design intent and production reality, where documentation, design tokens, component architecture, and engineering collaboration determine whether good ideas scale.
-      </p>
-      <p>
-        I also use AI-assisted workflows thoughtfully to improve speed and clarity across prototyping, documentation, context engineering, and DesignOps. The goal is not to replace design judgment, but to help cross-functional teams learn faster, communicate better, and reduce handoff friction.
+        I use tools like GitHub Copilot, Claude Code, Figma MCP, and Lovable to prototype faster, document decisions, and make handoffs clearer. The judgment stays with the team.
       </p>
 
       <a
-        href="/files/Davy_Jones_Resume_2026.doc"
-        download="Davy_Jones_Resume.doc"
+        href="/files/Davy_Jones_Resume_2026.docx"
+        download="Davy_Jones_Resume_2026.docx"
         className="btn btn-primary"
         aria-label="Download resume as PDF"
         style={{display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.5rem'}}
@@ -145,15 +137,6 @@ const About = () => {
 
       <hr />
 
-      <h2>What I Care About</h2>
-      <ul>
-        {cares.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-
-      <hr />
-
       <h2>Professional Experience</h2>
       {experience.map((job) => (
         <div key={`${job.company}-${job.title}`} className="experience-item">
@@ -171,11 +154,11 @@ const About = () => {
 
       <h2>Education</h2>
       <div className="education-item">
-        <p>MA Graphic & Web Design</p>
+        <p>M.A., Graphic & Web Design</p>
         <p>Minneapolis College of Art & Design, 2023</p>
       </div>
       <div className="education-item">
-        <p>BS Communications</p>
+        <p>B.S., Communication</p>
         <p>Columbia International University, 2016</p>
       </div>
     </div>

@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <div className="contact container">
       <p className="eyebrow">Contact</p>
-      <h1>Let's talk if you need principled UX leadership that still ships.</h1>
+      <h1>Have a complex product problem to work through?</h1>
       <p className="contact-intro">
-        I'm open to Lead UX Designer and Principal Designer roles where the work needs both conviction and humility: strategy, design systems, product clarity, and healthier ways for teams to make decisions. Remote is preferred, and I am open to hybrid opportunities in Chicagoland.
+        I am open to Lead UX Designer and Principal Designer roles focused on product clarity, design systems, and better ways for teams to work together. Remote is preferred, and I am open to hybrid opportunities in Chicagoland.
       </p>
       <p className="contact-intro">
-        If that sounds like the kind of leadership you need, reach out by email, connect on LinkedIn, or download my resume.
+        Send me an email, connect on LinkedIn, or download my resume.
       </p>
 
       <div className="contact-links">
@@ -39,14 +39,14 @@ const Contact = () => {
         </a>
 
         <a
-          href="/files/Davy_Jones_Resume_2026.doc"
-          download="Davy_Jones_Resume.doc"
+          href="/files/Davy_Jones_Resume_2026.docx"
+          download="Davy_Jones_Resume_2026.docx"
           className="contact-link"
         >
           <Download size={24} />
           <div>
             <strong>Resume</strong>
-            <p style={{margin: 0, fontSize: '0.875rem', color: 'var(--color-text-tertiary)'}}>Download PDF</p>
+            <p style={{margin: 0, fontSize: '0.875rem', color: 'var(--color-text-tertiary)'}}>Download DOCX</p>
           </div>
         </a>
       </div>
