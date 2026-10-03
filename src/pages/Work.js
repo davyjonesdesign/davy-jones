@@ -20,16 +20,18 @@ const Work = () => {
             to={`/work/${project.alias}`}
             className="project-item"
           >
-            <div className="project-thumbnail">
-              <img
-                src={project.mainImg}
-                alt={`${project.title} - ${project.subtitle || 'project screenshot'}`}
-              />
-            </div>
+            {project.mainImg && (
+              <div className="project-thumbnail">
+                <img
+                  src={project.mainImg}
+                  alt={`${project.title} - ${project.subtitle || 'project screenshot'}`}
+                />
+              </div>
+            )}
             <article className="project-content">
               <h2>{project.title}</h2>
               <p className="project-subtitle">{project.subtitle}</p>
-              <p className="project-duration">{project.duration}</p>
+              {project.duration && <p className="project-duration">{project.duration}</p>}
 
               <div className="project-tags">
                 {project.tag.map((tag, i) => (

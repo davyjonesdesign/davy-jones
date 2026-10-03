@@ -109,6 +109,48 @@ export const portfolioData = [
   },
 
   {
+    alias: 'teaching-figma-agent-design-system',
+    title: "Teaching Figma's agent to use our design system",
+    subtitle: 'A custom skill got Figma closer to W-UI. What it got wrong showed me where the library needed work.',
+
+    tag: [
+      'Design System',
+      'Figma Agent',
+      'AI Workflow',
+      'W-UI',
+      'Prototyping'
+    ],
+
+    challenge:
+      "Lovable made it easy for people on the team to spin up a prototype. The problem was that those prototypes weren't built from our components. They looked close enough to the product that the differences mattered: colors drifted, details were off, and correcting them one by one took time. I had been redrawing those screens in Figma with a GitHub Copilot skill. It worked, but it was slow. After a Figma webinar about the new agents, I wanted to see whether Figma could do more of that work directly.",
+
+    work: [
+      "Tried giving Figma's agent a published Lovable link and asking it to create the page. It pulled in pieces, but didn't quite draw the screen. Cleaning it up would have been more headache than drawing it myself.",
+      'Repackaged the GitHub Copilot skill I had been using in VS Code as a Figma skill called W-UI Screen Create. It brought in some grid elements, but rearranged other pieces and the header was wonky.',
+      "Started a loop: clean up the screen by hand, ask the agent to update the skill based on those changes, then run it again. When I found out it could read Figma comments, I added notes about the wordmark, header, grid, and inputs.",
+      "Used a screenshot of a concepts page for the latest pass instead of the Lovable link. It brought in the header, filter cards, inputs, grid, and list/map toggle. It also invented KPI cards that aren't in the system.",
+      'Used the misses to find gaps in W-UI. I updated the filter-tab styling, reworked the tabstrip, adjusted the grid toolbar for search on the right, and looked for a happy medium between filter cards that felt too heavy and chips that looked too much like buttons.'
+    ],
+
+    results: [
+      'The latest pass was closer, but it was not finished. Spacing was still off, inputs kept adding labels, search was in the wrong spot, and the header still had some funky things going on.',
+      "Published W-UI Screen Create for the team to use with Figma's agent and asked people to tell me when it did something they didn't like.",
+      'The library updates helped later runs and made the system better for people designing by hand. I carried the same approach into the Figma Make kit, where component guidelines tell the tool what to use instead of letting it invent its own.'
+    ],
+
+    tools: [
+      'Figma agent',
+      'Figma skills',
+      'GitHub Copilot',
+      'Lovable',
+      'Figma',
+      'W-UI Figma library'
+    ],
+
+    links: []
+  },
+
+  {
     alias: 'new-driver-experience-menu',
     title: 'New Driver Experience App Menu Redesign',
     subtitle: 'From flat list to card-based menu through usage-led navigation design',

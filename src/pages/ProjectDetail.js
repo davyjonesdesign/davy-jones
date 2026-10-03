@@ -64,7 +64,7 @@ const ProjectDetail = () => {
         <header>
           <h1>{project.title}</h1>
           <p className="project-detail-subtitle">{project.subtitle}</p>
-          <p className="project-detail-duration">{project.duration}</p>
+          {project.duration && <p className="project-detail-duration">{project.duration}</p>}
           <div className="project-tags">
             {project.tag.map((tag, index) => (
               <span key={tag}>

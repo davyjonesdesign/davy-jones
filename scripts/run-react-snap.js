@@ -27,6 +27,7 @@ const ROUTES = [
   '/work/wiki-ui',
   '/work/wheels',
   '/work/written-in-stone',
+  '/work/teaching-figma-agent-design-system',
 ];
 
 async function prerender() {
