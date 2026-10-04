@@ -2,35 +2,34 @@ export const portfolioData = [
   {
     alias: 'fleetview-4-0',
     title: 'FleetView 4.0 User/Assets',
-    subtitle: 'From prototype to dev-ready design through design-system-led collaboration',
+    subtitle: 'Checking a Lovable prototype against KendoReact and Figma before handoff',
     duration: 'Summer 2026',
 
     tag: [
       'Design-to-Development',
       'Design System',
-      'AI-Assisted',
+      'Prototype to Handoff',
       'Figma',
       'Enterprise'
     ],
 
     mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleetview-4-0/fleetview-user-assets.png?raw=true',
-    mainCap: 'FleetView 4.0 User/Assets side panel carried from prototype into a dev-ready design workflow',
+    mainCap: 'FleetView 4.0 User/Assets side panel',
 
     challenge:
-      'Prototype handoff was creating churn in FleetView 4.0. QA kept finding differences between what was in development and what was expected, while Lovable was not the source of truth for styling. KendoReact and the Figma design system were. The work needed a faster way to turn a functional prototype into a visually accurate, annotated handoff without losing system integrity.',
+      'In FleetView 4.0, QA kept finding differences between what was in development and what people expected. The Lovable prototype was not the styling reference; KendoReact and the Figma design system were. I wanted a faster way to compare them and prepare screens engineering and QA could review. It was still a proof of concept, not a tested production workflow.',
 
     work: [
-      'Pulled the Lovable prototype into VS Code and reviewed it with GitHub Copilot',
-      'Compared the prototype with KendoReact and the Figma design system',
-      'Used Figma MCP to generate screens, find component gaps, and update the design system where needed',
-      'Refined and annotated the final screens for handoff'
+      'Pulled the Lovable prototype into VS Code and used GitHub Copilot to inspect it',
+      'Compared the prototype with existing KendoReact patterns and the Figma design system',
+      'Used Figma MCP to generate screens and find places where the prototype did not match an existing component',
+      'Annotated the Figma screens and updated the system where a component or pattern was missing'
     ],
 
     results: [
-      'Moved from prototype to dev-ready design much faster',
-      'Reduced visual differences between the prototype and intended design',
-      'Created a clearer reference for future development and QA review',
-      'Delivered a proof of concept that still needs testing before production decisions'
+      'Created annotated Figma screens for engineering and QA to review',
+      'Used KendoReact and Figma as the references for component behavior and styling',
+      'Kept the work as a proof of concept; it still needs testing before production decisions'
     ],
 
     discovery: [
@@ -55,10 +54,10 @@ export const portfolioData = [
     ],
 
     overviewImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleetview-4-0/fleetview-vscode-copilot-mcp.png?raw=true',
-    overviewCap: 'Local Lovable repository in VS Code with GitHub Copilot and the Figma MCP supporting the design review loop',
+    overviewCap: 'Lovable prototype open in VS Code for review with GitHub Copilot and Figma MCP',
 
     methodImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleetview-4-0/fleetview-generated-figma.png?raw=true',
-    methodCap: 'Copilot-generated design in Figma, grounded in the existing FleetView design system',
+    methodCap: 'FleetView screens generated in Figma and checked against the existing design system',
 
     leadershipImpact: [
       'Turned prototype review into a shared design and engineering workflow by connecting Lovable, VS Code, GitHub Copilot, Figma MCP, and the Figma design system',
@@ -75,24 +74,24 @@ export const portfolioData = [
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleetview-4-0/fleetview-annotated-handoff.png?raw=true',
-    outcomeCap: 'Visually refined and annotated Figma screen ready for development handoff',
+    outcomeCap: 'Annotated Figma screen for engineering and QA review',
 
     gallery: [
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleetview-4-0/fleetview-vscode-copilot-mcp.png?raw=true',
-        caption: 'Local Lovable repository in VS Code with GitHub Copilot and the Figma MCP'
+        caption: 'Lovable prototype open in VS Code with GitHub Copilot and Figma MCP'
       },
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleetview-4-0/fleetview-generated-figma.png?raw=true',
-        caption: 'Copilot-generated design in Figma from the Lovable prototype'
+        caption: 'Figma screen generated from the Lovable prototype'
       },
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleetview-4-0/fleetview-annotated-handoff.png?raw=true',
-        caption: 'Visually refined and annotated in Figma, ready for handoff to development'
+        caption: 'Annotated Figma screen for engineering and QA review'
       },
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/fleetview-4-0/fleetview-workflow.png?raw=true',
-        caption: 'Workflow from Lovable prototype through VS Code, GitHub Copilot, and Figma MCP to Figma handoff'
+        caption: 'From Lovable prototype through VS Code, GitHub Copilot, and Figma MCP to annotated Figma screens'
       }
     ],
 
@@ -111,25 +110,25 @@ export const portfolioData = [
   {
     alias: 'teaching-figma-agent-design-system',
     title: "Teaching Figma's agent to use our design system",
-    subtitle: 'A custom skill got Figma closer to W-UI. What it got wrong showed me where the library needed work.',
+    subtitle: 'A custom skill got Figma closer to our component library. What it missed showed me where the library needed work.',
 
     tag: [
       'Design System',
       'Figma Agent',
       'AI Workflow',
-      'W-UI',
+      'Component Library',
       'Prototyping'
     ],
 
     challenge:
-      "Lovable made it easy for people on the team to spin up a prototype. The problem was that those prototypes weren't built from our components. They looked close enough to the product that the differences mattered: colors drifted, details were off, and correcting them one by one took time. I had been redrawing those screens in Figma with a GitHub Copilot skill. It worked, but it was slow. After a Figma webinar about the new agents, I wanted to see whether Figma could do more of that work directly.",
+      "Lovable made it easy for people on the team to spin up a prototype. The problem was that those prototypes weren't built from our components. Those live in our Figma library for the Wheels design system. Internally, we call it W-UI. The prototypes looked close enough to the product that the differences mattered: colors drifted, details were off, and correcting them one by one took time. I had been redrawing those screens in Figma with a GitHub Copilot skill. It worked, but it was slow. After a Figma webinar about the new agents, I wanted to see whether Figma could do more of that work directly.",
 
     work: [
       "Tried giving Figma's agent a published Lovable link and asking it to create the page. It pulled in pieces, but didn't quite draw the screen. Cleaning it up would have been more headache than drawing it myself.",
       'Repackaged the GitHub Copilot skill I had been using in VS Code as a Figma skill called W-UI Screen Create. It brought in some grid elements, but rearranged other pieces and the header was wonky.',
       "Started a loop: clean up the screen by hand, ask the agent to update the skill based on those changes, then run it again. When I found out it could read Figma comments, I added notes about the wordmark, header, grid, and inputs.",
       "Used a screenshot of a concepts page for the latest pass instead of the Lovable link. It brought in the header, filter cards, inputs, grid, and list/map toggle. It also invented KPI cards that aren't in the system.",
-      'Used the misses to find gaps in W-UI. I updated the filter-tab styling, reworked the tabstrip, adjusted the grid toolbar for search on the right, and looked for a happy medium between filter cards that felt too heavy and chips that looked too much like buttons.'
+      'Used the misses to find gaps in the library. I updated the filter-tab styling, reworked the tabstrip, adjusted the grid toolbar for search on the right, and looked for a happy medium between filter cards that felt too heavy and chips that looked too much like buttons.'
     ],
 
     results: [
@@ -144,7 +143,7 @@ export const portfolioData = [
       'GitHub Copilot',
       'Lovable',
       'Figma',
-      'W-UI Figma library'
+      'Figma component library'
     ],
 
     links: []
@@ -153,7 +152,7 @@ export const portfolioData = [
   {
     alias: 'new-driver-experience-menu',
     title: 'New Driver Experience App Menu Redesign',
-    subtitle: 'From flat list to card-based menu through usage-led navigation design',
+    subtitle: 'Using navigation data to make the most-used part of the menu easier to find',
     duration: 'Summer 2026',
 
     tag: [
@@ -165,23 +164,23 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-final.png?raw=true',
-    mainCap: 'New Driver Experience app menu redesigned around actual navigation usage',
+    mainCap: 'New Driver Experience menu with Services at the top of the navigation',
 
     challenge:
-      'Drivers and internal teams found the existing menu overwhelming. Items got lost in long lists, key navigation was not recognizable, and search behavior was confusing. The redesign needed to make high-value destinations easier to find without adding more cognitive load.',
+      'Drivers and internal teams had trouble finding items in the long menu. Search was confusing, and the most-used destinations did not stand out. I used navigation data to rethink the order and make the menu easier to scan.',
 
     work: [
-      'Used navigation data to make Services the starting point',
+      'Put Services first because it was the most-used section',
       'Replaced the long text list with cards and recognizable icons',
-      'Added search with highlighted matching characters',
-      'Built a Quick guide overlay and tested the experience in Figma Make'
+      'Added search that highlights matching characters',
+      'Built a Quick guide overlay and made a working prototype in Figma Make'
     ],
 
     results: [
-      'Made the most-used part of the menu easier to find',
-      'Improved scanning and recognition',
-      'Tested the working prototype with developers, product owners, leaders, and the UX team',
-      'Earmarked the redesign for inclusion in the next development round'
+      'Gave Services a stronger place in the menu based on usage data',
+      'Let people try the search and Quick guide interactions in a working prototype',
+      'Reviewed the prototype with developers, product owners, leaders, and the UX team',
+      'The redesign was earmarked for a future development round'
     ],
 
     discovery: [
@@ -206,10 +205,10 @@ export const portfolioData = [
     ],
 
     overviewImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-concept.png?raw=true',
-    overviewCap: 'Concept design exploring a more scannable card-based navigation hierarchy',
+    overviewCap: 'Early menu concept exploring a card-based navigation layout',
 
     methodImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-final.png?raw=true',
-    methodCap: 'Final menu design using system UI, recognizable iconography, and usage-led hierarchy',
+    methodCap: 'Menu design with Services first, recognizable icons, and search',
 
     leadershipImpact: [
       'Shifted the navigation conversation from preserving a complete list to helping people find the right destination quickly',
@@ -227,30 +226,30 @@ export const portfolioData = [
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-final.png?raw=true',
-    outcomeCap: 'Final accessible menu redesign ready for stakeholder and driver testing',
+    outcomeCap: 'Final menu design prepared for stakeholder and driver testing',
 
     gallery: [
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-existing.png?raw=true',
-        caption: 'Existing menu: long lists obscured key navigation and made scanning difficult'
+        caption: 'Existing menu with destinations in a long text list'
       },
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-concept.png?raw=true',
-        caption: 'Concept design: early card-based hierarchy and navigation exploration'
+        caption: 'Early concept exploring a card-based menu'
       },
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-final.png?raw=true',
-        caption: 'Final design: Services-led navigation with recognizable iconography'
+        caption: 'Services-led navigation with recognizable icons'
       },
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-prototype.gif?raw=true',
-        caption: 'Figma Make prototype: working search with character highlighting and Quick guide overlay',
+        caption: 'Figma Make prototype with search highlighting and a Quick guide',
         link: 'https://idea-modal-63070790.figma.site/',
         linkDescription: 'Open password-protected Figma Make prototype'
       },
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/new-driver-experience/menu-workflow.png?raw=true',
-        caption: 'Workflow from Figma design system to Figma Make prototype'
+        caption: 'From the Figma design system to a Figma Make prototype'
       }
     ],
 
@@ -269,7 +268,7 @@ export const portfolioData = [
   {
     alias: 'wheels',
     title: 'Wheels Unified Design System',
-    subtitle: 'Principled design system stewardship across Wheels, Donlen, and LeasePlan USA',
+    subtitle: 'Shared components and guidance after Wheels, Donlen, and LeasePlan USA came together',
     duration: '2023 - Present',
 
     tag: [
@@ -281,23 +280,23 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/paper-de.gif?raw=true',
-    mainCap: 'Unified design system powering driver experience across web and mobile platforms',
+    mainCap: 'Shared design system patterns for Wheels products across web and mobile',
 
     // Recruiter-focused structure
     challenge:
-      'Following the merger of Wheels, Donlen, and LeasePlan USA, teams were trying to move quickly while carrying three different UI histories. The problem was not only visual inconsistency; it was a lack of shared decision-making. Without clear boundaries, contribution rules, or design-to-code parity, every team had to re-argue the same choices. The business needed a principled operating model that could create unity without flattening every product need.',
+      'When Wheels, Donlen, and LeasePlan USA came together, they brought different UI histories and ways of working. Teams were making the same component decisions more than once, and Figma, ThemeBuilder, and Storybook did not always line up. I worked on shared patterns and contribution guidance, while leaving room for product-specific needs.',
 
     work: [
-      'Moved the design team to Figma and set contribution rules',
-      'Built a shared KendoReact system and aligned it with Figma, ThemeBuilder, and Storybook',
-      'Adapted React Native Paper for mobile and accessibility needs',
-      'Documented the system in Frontify and supported teams through adoption'
+      'Moved the design team to Figma and wrote down how shared components could change',
+      'Built KendoReact patterns and worked to keep them aligned with Figma, ThemeBuilder, and Storybook',
+      'Adapted React Native Paper patterns for our mobile products and accessibility needs',
+      'Documented the system in Frontify and worked with teams as they started using it'
     ],
 
     results: [
-      'Replaced several legacy UI approaches with one shared system',
-      'Reduced implementation time by 50%',
-      'Improved accessibility, consistency, and design-to-development handoff'
+      'Gave teams shared components and contribution guidance after the merger',
+      'Connected design decisions in Figma to the implemented theme and Storybook',
+      'Worked accessibility needs into tokens and core component patterns'
     ],
 
     discovery: [
@@ -315,38 +314,38 @@ export const portfolioData = [
     ],
 
     approaches: [
-      'Migrated all designers to Figma and established contribution models for scalable growth',
-      'Created Design System 1.0: Flexible Figma foundation to guide future implementations',
-      'Built KendoReact System: 60+ components with feature-rich data grid, ensuring parity across Figma, ThemeBuilder, and Storybook',
-      'Adapted React Native Paper System: Mobile-first design aligned with WCAG accessibility standards',
-      'Developed centralized asset libraries: Icon and vehicle image libraries for consistency',
-      'Documented comprehensive guidelines in Frontify with clear governance models'
+      'Moved the design team to Figma and wrote contribution guidance for the shared library',
+      'Set up the Figma library as a starting point for future implementation work',
+      'Built KendoReact components, including a data grid, and checked them against Figma, ThemeBuilder, and Storybook',
+      'Adapted React Native Paper patterns for our mobile products and accessibility needs',
+      'Collected shared icons and vehicle images in reusable libraries',
+      'Documented component use and contribution guidance in Frontify'
     ],
 
     overviewImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/paper-figcomp.jpg?raw=true',
-    overviewCap: 'System architecture showing unified approach across frameworks',
+    overviewCap: 'Shared component system across the frameworks used by the teams',
 
     methodImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/kendo-tb.jpg?raw=true',
-    methodCap: 'ThemeBuilder implementation ensuring design-development parity',
+    methodCap: 'ThemeBuilder patterns checked against the Figma library',
 
     leadershipImpact: [
-      'Led and influenced product, engineering, marketing, and external agency partners across three merged companies without relying on direct reporting authority',
-      'Changed the operating model from local UI opinions to system-level decision making with documented contribution rules and review criteria',
-      'Mentored designers through Figma migration, component adoption, and system rationale so design quality could scale beyond one owner',
-      'Made design system contribution explicit in product delivery by connecting reusable components to Figma, ThemeBuilder, Storybook, and Frontify documentation'
+      'Worked with product, engineering, marketing, and agency partners across the three companies',
+      'Moved repeated component decisions into shared guidance and review criteria',
+      'Helped designers move to Figma and understand how to use and update the library',
+      'Connected Figma components with ThemeBuilder, Storybook, and Frontify guidance'
     ],
 
     impact: [
-      'Replaced fragmented legacy UI practices with a single enterprise design system spanning three merged organizations and multiple product surfaces',
-      'Reduced implementation time by 50% by standardizing reusable component patterns, documentation, and decision frameworks engineering teams could apply directly',
-      'Established system governance (boundaries, contribution workflow, and review criteria) that reduced off-system variance across product, marketing, and external agencies',
-      'Embedded accessibility as a system property, reaching WCAG AA standards across core components instead of treating compliance as a late-stage project task',
-      'Improved delivery predictability by creating parity across Figma, ThemeBuilder, and Storybook, lowering design-dev churn and post-release UI defects',
-      'Raised cross-org UX maturity by giving teams a shared language for component decisions, scaling influence beyond any single squad'
+      'Replaced separate UI approaches with shared components and guidance across Wheels, Donlen, and LeasePlan USA',
+      'Standardized component patterns and documentation that engineering teams could use directly',
+      'Set boundaries and review criteria for changes to the shared system',
+      'Worked WCAG AA requirements into core component decisions',
+      'Kept Figma, ThemeBuilder, and Storybook aligned through ongoing review',
+      'Gave teams a shared way to discuss component decisions'
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/wass-documentation.jpg?raw=true',
-    outcomeCap: 'Frontify documentation serving as single source of truth across teams',
+    outcomeCap: 'Frontify guidance for teams using the shared system',
 
     tools: [
       'Figma',
@@ -376,8 +375,8 @@ export const portfolioData = [
 
   {
     alias: 'loading-ui-guidelines',
-    title: 'Web Skeleton & Loading UI Guidelines',
-    subtitle: 'From uncertainty to intentional feedback through progressive loading patterns',
+    title: 'Web Skeleton and Loading UI Guidelines',
+    subtitle: 'Choosing what to show while a page waits, instead of defaulting to a spinner',
     duration: 'Summer 2025',
 
     tag: [
@@ -389,23 +388,22 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/web-loading-ui/happy-unhappy-loading-u.gif?raw=true',
-    mainCap: 'Loading guidance using progressive disclosure to reduce uncertainty during Web waits',
+    mainCap: 'Loading guidance for short, medium, and long waits',
 
     challenge:
-      'Developers needed a clear system for implementing loading states without relying on a single generic spinner. The challenge was to define when different loading treatments should appear, which KendoReact components to use, how they should animate, and how the sequence should unfold across the page without creating more confusion.',
+      'Developers needed to know what to show while different parts of a page were loading. A single spinner did not explain which section was waiting or how long the wait might be. I mapped loading behavior to the wait, the page, and the KendoReact components we already had.',
 
     work: [
-      'Defined time-based loading scenarios for short, medium, and long waits',
-      'Mapped the appropriate KendoReact loading components and placement by screen and state',
-      'Built a progressive disclosure model so feedback increased with wait duration',
-      'Created sectioned loading guidance so users could keep interacting while slower areas loaded'
+      'Defined loading patterns for short, medium, and long waits',
+      'Mapped KendoReact loading components to the page sections and states where they fit',
+      'Added feedback in stages as the wait continued',
+      'Documented section-by-section loading so people could use faster parts of a page while others were still waiting'
     ],
 
     results: [
-      'Gave developers a concrete implementation reference',
-      'Reduced uncertainty by matching feedback to actual wait time',
-      'Improved perceived progress during long loads',
-      'Created reusable behavior guidance for future loading patterns'
+      'Gave developers a reference for component choice, placement, and timing',
+      'Documented how the loading state changes as a wait continues',
+      'Set a reusable pattern for later web loading guidance'
     ],
 
     discovery: [
@@ -440,18 +438,18 @@ export const portfolioData = [
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/web-loading-ui/happy-unhappy-loading-u.gif?raw=true',
-    outcomeCap: 'Progressive loading guidance translated into a concrete implementation model',
+    outcomeCap: 'Loading guidance showing which feedback to use as a wait continues',
 
     gallery: [
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/web-loading-ui/happy-unhappy-loading-u.gif?raw=true',
-        caption: 'Loading UI guideline prototype: progressive disclosure by wait time',
+        caption: 'Loading UI prototype showing feedback by wait time',
         link: 'https://www.figma.com/proto/VT946pea19XE0FtXTPYVaJ/NDE-%E2%80%94-Loading-Widgets?node-id=4-1465&t=ci6voE3RSnYnijrY-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2351&show-proto-sidebar=1',
         linkDescription: 'Open Figma prototype'
       },
       {
         src: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/web-loading-ui/loading-workflow.png?raw=true',
-        caption: 'Loading workflow showing how the user experience progresses from initial wait to clear recovery states'
+        caption: 'Loading workflow from the initial wait through later feedback'
       }
     ],
 
@@ -472,8 +470,8 @@ export const portfolioData = [
 
   {
     alias: 'new-driver-experience',
-    title: 'New Driver Experience',
-    subtitle: 'Research-led maintenance redesign for drivers and fleet teams navigating real-world compliance work',
+    title: 'New Driver Experience: Maintenance',
+    subtitle: 'Making maintenance responsibility and next steps clearer for drivers',
     duration: 'Launch: July 20, 2025',
 
     tag: [
@@ -485,22 +483,21 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/paper-figcomp.jpg?raw=true',
-    mainCap: 'New Driver Experience patterns grounded in the Wheels design system and enterprise workflow research',
+    mainCap: 'Driver maintenance patterns in the New Driver Experience',
 
     challenge:
-      'Drivers were missing preventative maintenance not because they did not care, but because the product made responsibility, timing, and next actions too easy to misunderstand. The redesign treated maintenance as part of a larger vehicle lifecycle, giving drivers and fleet teams a clearer, more accountable path from notification to task completion.',
+      'Drivers were missing preventative maintenance tasks. In the product, it was easy to miss who was responsible, when the work was due, and what to do next. I worked through the maintenance flow so drivers and fleet teams had a clearer path from a notification to the task.',
 
     work: [
-      'Researched where drivers missed or misunderstood maintenance tasks',
-      'Mapped task flows, statuses, errors, and support handoffs',
-      'Aligned Product, Engineering, Operations, and Driver Services around clearer responsibilities',
-      'Created reusable patterns for guidance, status, and task completion'
+      'Talked with drivers about where maintenance tasks were missed or unclear',
+      'Mapped task steps, statuses, errors, and support handoffs',
+      'Worked with Product, Engineering, Operations, and Driver Services on who owned each step',
+      'Added reusable patterns for task guidance, status, and completion'
     ],
 
     results: [
-      'Made maintenance responsibilities and next steps clearer',
-      'Reduced avoidable support questions',
-      'Added reusable patterns to the driver experience system'
+      'Made the task owner, due date, and next step easier to find in the flow',
+      'Added reusable patterns for maintenance tasks and status to the driver experience system'
     ],
 
     discovery: [
@@ -522,25 +519,25 @@ export const portfolioData = [
       'Mapped preventative maintenance task flows, information architecture, status states, error states, and support escalation paths across the DriverView maintenance section',
       'Defined interaction patterns for progressive maintenance guidance, status visibility, document readiness, and support handoff',
       'Used design critiques to pressure-test hierarchy, messaging, and edge cases with product and engineering partners',
-      'Used the React rebuild as a performance and scalability constraint, creating patterns that could support future connected-vehicle integrations'
+      'Worked within the React rebuild and documented patterns for future connected-vehicle work'
     ],
 
     leadershipImpact: [
-      'Led cross-functional alignment around an end-to-end driver journey instead of isolated screen requests',
-      'Influenced product scope by shifting conversations from feature output to outcomes people could feel: clarity, confidence, and fewer avoidable support touchpoints',
+      'Worked with product, engineering, operations, and driver services on the full maintenance journey instead of isolated screens',
+      'Kept the conversation on whether drivers could tell what was due and what to do next',
       'Mentored designers on how to use critique, research synthesis, and design system rationale to defend decisions with evidence',
       'Turned product-specific onboarding work into reusable system patterns for tasks, statuses, guidance, and exception handling'
     ],
 
     impact: [
       'Improved maintenance task completion and compliance by making responsibility, due dates, and next steps easier to understand',
-      'Reduced support tickets by clarifying maintenance responsibilities, error states, and escalation paths before drivers needed help',
+      'Made maintenance responsibilities, error states, and escalation paths clearer before drivers needed help',
       'Raised design quality through repeatable critique and review practices that made tradeoffs visible to product and engineering partners',
       'Strengthened the design system by contributing reusable patterns for maintenance flows, status communication, error handling, and task completion'
     ],
 
     outcomeImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/wass-documentation.jpg?raw=true',
-    outcomeCap: 'System documentation and reusable guidance patterns supported consistent onboarding delivery',
+    outcomeCap: 'Reusable guidance patterns for driver tasks and statuses',
 
     tools: [
       'Figma',
@@ -556,7 +553,7 @@ export const portfolioData = [
   {
     alias: 'fleet-redeployment',
     title: 'Fleet Redeployment Hub',
-    subtitle: 'Human-AI collaboration prototype for accountable, confidence-aware fleet redeployment',
+    subtitle: 'A proof of concept for reviewing AI-assisted fleet redeployment actions',
     duration: '2025',
 
     tag: [
@@ -568,22 +565,22 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/veh-red-3.jpg?raw=true',
-    mainCap: 'Fleet Redeployment Hub, vehicle inventory management with natural language command bar',
+    mainCap: 'Fleet Redeployment Hub with a vehicle grid and natural-language command bar',
 
     challenge:
-      'An enterprise fleet client needed to validate whether AI-assisted interaction patterns could reduce a multi-hour redeployment workflow into a guided, auditable experience. Existing operations depended on fragmented spreadsheets, email threads, and manual status checks. The design challenge was not to make AI feel magical; it was to make it accountable by communicating intent, system state, confidence, and recovery paths clearly.',
+      'An enterprise fleet client wanted to test whether AI could help with redeployment, a multi-hour process spread across spreadsheets, email, and manual status checks. The prototype needed to show what the AI was trying to do, what state it was in, and how an operator could review or recover from an action.',
 
     work: [
-      'Mapped the current redeployment workflow and its trust issues',
-      'Designed the command bar, vehicle grid, filters, bulk actions, drawer, and confirmation flow',
-      'Defined clear states for processing, results, errors, confidence, and recovery',
-      'Used Lovable, Figma, and VS Code to test the design in code'
+      'Mapped the redeployment workflow across spreadsheets, email, and vehicle status checks',
+      'Designed the command bar, vehicle grid, filters, bulk actions, side drawer, and confirmation flow',
+      'Defined processing, results, error, confidence, and recovery states',
+      'Used Lovable, Figma, and VS Code to try the flow in code'
     ],
 
     results: [
-      'Delivered a client-ready proof of concept on a short timeline',
-      'Made AI actions easier to understand and correct',
-      'Created reusable KendoReact patterns for engineering'
+      'Built a proof of concept for client review',
+      'Made the AI action, its status, and the recovery path visible in the interface',
+      'Documented KendoReact patterns for engineering to review'
     ],
 
     discovery: [
@@ -649,7 +646,7 @@ export const portfolioData = [
   {
     alias: 'budgety',
     title: 'Budgety App',
-    subtitle: 'A personal finance concept focused on calm, understandable budgeting habits',
+    subtitle: 'A budgeting concept for early-career professionals who want a clear monthly plan',
     duration: '2026',
     hidden: true,
 
@@ -662,22 +659,22 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://github.com/davyjonesdesign/data-for-axios/blob/main/assets/budgety/budgety-cover.jpg?raw=true',
-    mainCap: 'Budgety dashboard focused on monthly planning, category tracking, and savings progress',
+    mainCap: 'Budgety dashboard with a monthly plan, category tracking, and savings goals',
 
     challenge:
-      'Budgeting tools can make people feel judged or overwhelmed. Budgety was framed as a lightweight product for early-career professionals who need a clear monthly plan, fewer surprises, and simple decisions they can trust without living inside spreadsheets.',
+      'Budgeting tools can feel like another thing to keep up with. I framed Budgety as a concept for early-career professionals who want a clear monthly plan without living in spreadsheets.',
 
     work: [
-      'Mapped the core budgeting tasks: setup, monitoring, reminders, and savings',
-      'Designed a calm dashboard with clear progress and trend signals',
-      'Created quick actions for category limits, notes, and adjustments',
-      'Documented responsive behavior for mobile and desktop'
+      'Mapped setup, category tracking, bill reminders, and savings goals',
+      'Designed a dashboard for the monthly plan and spending trends',
+      'Added quick actions for category limits, notes, and adjustments',
+      'Documented how the layout changes on mobile and desktop'
     ],
 
     results: [
-      'Simplified the path to a first budget',
-      'Made spending changes easier to understand',
-      'Produced an implementation-ready React UI specification'
+      'Worked through a first-budget setup and category tracking flow',
+      'Made category limits and changes visible from the dashboard',
+      'Prepared a React UI specification for implementation'
     ],
 
     discovery: [
@@ -740,7 +737,7 @@ export const portfolioData = [
   {
     alias: 'wiki-ui',
     title: 'Wikipedia.org UX/UI Redesign',
-    subtitle: 'Self-directed mobile redesign focused on accessibility, hierarchy, and everyday usability',
+    subtitle: 'A self-directed mobile redesign focused on navigation, readability, and accessibility',
     duration: 'Winter 2023',
     hidden: true,
 
@@ -753,7 +750,10 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/wikiUI/wikiUI-feature.jpg',
-    mainCap: 'Mobile redesign with improved accessibility and modern design system',
+    mainCap: 'Mobile Wikipedia redesign with a bottom search bar, menu, and dark mode',
+
+    challenge:
+      'I wanted to make the Wikipedia mobile landing page easier to scan and use with one hand, without removing the parts people already knew.',
 
     objectives: [
       'Significantly improve user experience of wikipedia.org',
@@ -763,23 +763,21 @@ export const portfolioData = [
     ],
 
     overview: [
-      'Self-directed mobile interface redesign of wikipedia.org, addressing longstanding UX debt through a new design system, improved visual hierarchy, and accessibility improvements. Conducted ongoing feedback collection via social media communities to validate direction. The goal was creating a scalable design system foundation for the entire site, not just a visual refresh.'
+      'I redesigned the Wikipedia mobile landing page, moving search within thumb reach, placing secondary links in a menu, and working through light and dark color palettes. I asked people in social media communities for feedback as the design developed.'
     ],
 
     method: [
-      'Gathered ongoing feedback from social media communities (LinkedIn, Instagram)',
-      'Drew inspiration from UX best practices and modern design patterns',
-      'Made search bar accessible at bottom of screen for easier thumb tapping',
-      'Organized tertiary content in menu to streamline landing page',
-      'Revamped iconography for consistent style',
-      'Created color palette for light and dark modes prioritizing readability'
+      'Asked people in social media communities for feedback as the design developed',
+      'Moved search to the bottom of the screen so it was easier to reach with a thumb',
+      'Moved secondary links into the menu to make the landing page easier to scan',
+      'Redrew icons to use a more consistent style',
+      'Worked out light and dark color palettes with readability in mind'
     ],
 
     outcome: [
-      'Redesigned mobile landing screen with new menu and dark mode',
-      'Created simple flows including menu interactions and mode toggling',
-      'Established foundation for user feedback and iterative improvements',
-      'Plan to solicit feedback through social media and implement changes'
+      'Made a mobile landing-page prototype with a menu and dark mode',
+      'Added flows for menu interactions and switching modes',
+      'Kept the design open for more feedback and another round of changes'
     ],
 
     tools: [
@@ -811,7 +809,7 @@ export const portfolioData = [
   {
     alias: 'streamline-app',
     title: 'Streamline App',
-    subtitle: 'Student research project exploring the frustration of finding something to watch across too many apps',
+    subtitle: 'A student project about finding something to watch across too many streaming apps',
     duration: 'Spring 2023',
     hidden: true,
 
@@ -822,7 +820,10 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/streamline/streamine-cover.jpg',
-    mainCap: 'Mobile streaming app solving content fragmentation',
+    mainCap: 'Streamline mobile concept for browsing shows across streaming services',
+
+    challenge:
+      'Finding a show meant checking more than one streaming app. For this student project, I looked at how people searched and what a shared browsing experience could look like.',
 
     objectives: [
       'Gain insights into user behavior and preferences on streaming apps',
@@ -836,18 +837,15 @@ export const portfolioData = [
     ],
 
     method: [
-      'Conducted survey among 20 participants to understand streaming habits and pain points',
-      'Crafted user personas to empathize with needs and guide design decisions',
-      'Addressed users\' primary mobile streaming context through interface sketches',
-      'Mapped user flows to visualize journey requirements',
-      'Iterated design in Figma refining UI and experience'
+      'Surveyed people about how they used streaming apps and where the search process got frustrating',
+      'Made user personas from the research to keep the different needs in view',
+      'Sketched a mobile interface around the way people browse on their phones',
+      'Mapped the main flows before refining the screens in Figma'
     ],
 
     outcome: [
-      'Testing revealed preferences for darker backgrounds and simplified search',
-      'Final prototype praised for simplicity and cool colors',
-      'Identified areas for improvement including more research and refined approach',
-      'Streamline demonstrates real-world problem-solving bringing content together'
+      'Feedback pointed toward a darker interface and a simpler search flow',
+      'The prototype gave me a direction to keep testing, along with questions that needed more research'
     ],
 
     tools: [
@@ -879,7 +877,7 @@ export const portfolioData = [
   {
     alias: 'written-in-stone',
     title: 'Written in Stone App',
-    subtitle: 'Full-stack capstone exploring biblical geography and historical context through map-based discovery',
+    subtitle: 'A capstone project for exploring biblical places and historical context on a map',
     duration: 'Summer 2023',
     hidden: true,
 
@@ -891,7 +889,10 @@ export const portfolioData = [
     ],
 
     mainImg: 'https://davyjonesdesign.github.io/data-for-axios/assets/capstone/mac-mockup.png',
-    mainCap: 'Web application built with Vue and Leaflet',
+    mainCap: 'Written in Stone map app built with Vue and Leaflet',
+
+    challenge:
+      'Many Bible readers do not have the geography and historical context alongside the text. For my capstone, I wanted to make those places easier to explore on a map.',
 
     objectives: [
       'Surface comprehensive biblical context',
@@ -904,20 +905,18 @@ export const portfolioData = [
     ],
 
     method: [
-      'Conducted thorough research drawing inspiration from platforms like Urban Archive',
-      'Progressed from moodboards and brand design to wireframes',
-      'Documented evolving design system',
-      'Built live web app using VS Code and Vue framework',
-      'Created teaser motion graphic video',
-      'Gathered feedback from experts and potential users for iterative refinement'
+      'Looked at map-based references, including Urban Archive',
+      'Worked from moodboards and brand design into wireframes and a prototype',
+      'Documented the design system as it changed',
+      'Built the web app in Vue with Leaflet',
+      'Made a short motion-graphics teaser',
+      'Asked experts and potential users for feedback'
     ],
 
     outcome: [
-      'Teaser video effectively communicates project essence',
-      'Brand/design system exudes clean, modern aesthetic',
-      'Figma prototype previews functionality and future enhancements',
-      'MVP Vue and Leaflet app allows spatial exploration of biblical sites',
-      'Future plans include mobile version and partnerships with nonprofits and colleges'
+      'Built a Vue and Leaflet app for exploring biblical sites on a map',
+      'Made a Figma prototype for the planned interactions',
+      'The mobile version and possible education partnerships were still future ideas'
     ],
 
     tools: [

@@ -12,37 +12,37 @@ const featuredProjects = featuredAliases
 
 const focusAreas = [
   {
-    label: 'Design-to-development collaboration',
-    description: 'Make the path from design to implementation clear.',
+    label: 'Design to development',
+    description: 'Give engineering the component, states, and details needed to build the design.',
     icon: designToDevCollabIcon
   },
   {
-    label: 'AI design workflows',
-    description: 'Use AI to explore, prototype, and improve decisions faster.',
+    label: 'AI in the design workflow',
+    description: 'Use the tools for a first pass, then check what they guessed or missed.',
     icon: aiDesignWorkflowIcon
   },
   {
-    label: 'Enterprise design systems',
-    description: 'Create accessible patterns that scale across products and teams.',
+    label: 'Design systems',
+    description: 'Keep Figma components, implemented themes, and usage guidance connected.',
     icon: enterpriseDesignSystemsIcon
   }
 ];
 
 const workingSteps = [
-  ['Discover & define', 'Understand people, goals, workflow, and constraints.'],
-  ['Prototype', 'Test ideas early in Figma, code, or both.'],
-  ['Build', 'Work with engineering through handoff + QA.'],
-  ['Improve', 'Learn, refine, and share what works.']
+    ['Start with the problem', 'Look at the task, the people doing it, and what is getting in the way.'],
+    ['Try it out', 'Work through the flow in Figma, code, or both.'],
+    ['Check the details', 'Compare the design with the system and spell out states and edge cases.'],
+    ['See what made it through', 'Review the implementation and update the screen or system where it drifted.']
 ];
 
 const Home = () => {
   return (
     <div className="landing container">
       <div className="landing-hero">
-        <p className="eyebrow">Current role: Senior UI Designer</p>
-        <h1>From complex problems to scalable digital products.</h1>
+        <p className="eyebrow">Senior UI Designer at Wheels</p>
+        <h1>I design product interfaces and the systems behind them.</h1>
         <p className="landing-intro">
-          I design clear, accessible products and the systems that help teams build them. I work with Product, Engineering, Research, and Operations to turn complex problems into usable experiences.
+          A lot of my work sits between Figma and the build: finding the right component, writing down how it behaves, and checking what made it through development.
         </p>
         <div className="landing-cta">
           <Link to="/work" className="btn btn-primary">
@@ -91,7 +91,7 @@ const Home = () => {
           <span className="eyebrow">AI-enabled design practice</span>
           <h3 id="ai-workflows" className="section-heading">AI supports my process. It does not replace it.</h3>
           <p>
-            I use Claude, GitHub Copilot, Lovable, VS Code, and Figma MCP to accelerate rapid prototyping, documentation, context engineering, and design-to-development workflows. The value is not simply generating screens; it is improving speed, clarity, collaboration, and the quality of decisions teams can make before production.
+            I use GitHub Copilot, Claude Code, Lovable, and Figma's tools on real design work. They're useful for a first pass, copying screens, or getting a flow into code. They still guess when a component or guideline is missing, so I check the output and update the system when the same gap keeps showing up.
           </p>
           <ul className="highlight-tags" aria-label="AI workflow themes">
             {['Claude', 'GitHub Copilot', 'Lovable', 'VS Code', 'Figma MCP', 'AI DesignOps', 'Rapid prototyping', 'Documentation', 'Context engineering'].map((tag) => <li key={tag}>{tag}</li>)}

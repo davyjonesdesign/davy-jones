@@ -12,8 +12,8 @@ import ProjectDetail from './pages/ProjectDetail';
 import NotFound from './pages/NotFound';
 import { portfolioData } from './data/portfolioData';
 
-const DEFAULT_TITLE = 'Davy Jones | Lead UX Designer and Design Systems Leader';
-const DEFAULT_DESCRIPTION = 'Lead UX Designer specializing in enterprise UX strategy, design leadership, design systems governance, and scalable product quality.';
+const DEFAULT_TITLE = 'Davy Jones | Senior UI Designer';
+const DEFAULT_DESCRIPTION = 'Senior UI designer at Wheels, working across product interfaces, design systems, and the details that get designs into production.';
 
 function setMetaDescription(content) {
   const tag = document.querySelector('meta[name="description"]');
@@ -33,14 +33,14 @@ function getPageMetadata(pathname) {
   if (pathname === '/about') {
     return {
       title: 'About | Davy Jones',
-      description: 'Leadership background, competencies, and approach to enterprise UX strategy, design systems governance, mentorship, and cross-functional influence.'
+      description: 'I work across product UI, design systems, and front-end implementation at Wheels.'
     };
   }
 
   if (pathname === '/work') {
     return {
       title: 'Work | Davy Jones',
-      description: 'Case studies spanning enterprise UX strategy, product ownership, design systems governance, mentorship, and AI-assisted workflow design.'
+      description: 'Selected product and design-system work, including what I tried, what worked, and what still needed more work.'
     };
   }
 
@@ -48,14 +48,14 @@ function getPageMetadata(pathname) {
   if (pathname === '/systems' || pathname === '/work/design-systems') {
     return {
       title: 'Design Systems & Governance | Davy Jones',
-      description: 'A deep dive into UI.wheels design system architecture, governance, semantic tokens, WCAG AA standards, and enterprise adoption.'
+      description: 'How we brought shared components, design guidance, and implementation patterns together after a merger.'
     };
   }
 
   if (pathname === '/contact') {
     return {
       title: 'Contact | Davy Jones',
-      description: 'Connect with Davy Jones for Lead UX Designer and Principal Designer roles focused on UX strategy, design systems, and design culture.'
+      description: 'Contact Davy Jones about Lead UX Designer and Principal Designer opportunities.'
     };
   }
 

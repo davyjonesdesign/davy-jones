@@ -6,9 +6,9 @@ const Work = () => {
   return (
     <div className="work container">
       <p className="eyebrow">Case Studies</p>
-      <h1>A few projects where I helped make complex work clearer.</h1>
+      <h1>Projects where product UI, design systems, and implementation meet.</h1>
       <p className="work-intro">
-        These case studies show how I move from a messy problem to a usable product, a stronger system, and a clearer handoff.
+        Some started with a rough prototype. Others started with a workflow that needed untangling. Here's what I tried, what worked, and what still needed more work.
       </p>
 
       <div className="project-list">

@@ -2,7 +2,7 @@
 
 Oct 3, 2026 · @Davy Jones
 
-Lovable made it easy for anyone on the team to spin up a prototype, but those prototypes weren't built from our design system. I wanted a faster way to get them into Figma using our actual components. This is how I got there with Figma's agent, a custom skill, and a lot of passes, and what it showed me about the design system along the way.
+Lovable made it easy for anyone on the team to spin up a prototype, but those prototypes weren't built from our components. Those live in our Figma library for the Wheels design system. Internally, we call it W-UI. I wanted a faster way to get the prototypes into Figma using those components. This is how I got there with Figma's agent, a custom skill, and a lot of passes, and what it showed me about the design system along the way.
 
 **My role:** design system owner, working solo on this. **Tools:** Figma agents and skills, GitHub Copilot, Lovable, the W-UI Figma library. **Time:** about a day of focused work.
 
@@ -44,7 +44,7 @@ For the latest pass I skipped the link and gave it a screenshot of a concepts pa
 
 ## What changed in the design system
 
-The most useful part wasn't the screens. It was what the agent kept getting wrong. When it picked the wrong component, that usually pointed to a gap in our system. So partway through, I asked the agent what I should update in the W-UI library to make this easier, and used it to help make those updates.
+The most useful part wasn't the screens. It was what the agent kept getting wrong. When it picked the wrong component, that usually pointed to a gap in our system. So partway through, I asked the agent what I should update in the Figma library to make this easier, and used it to help make those updates.
 
 - **Filter tabs:** these were old and we weren't really using them, so I updated the styling.
 - **Filter chips:** feedback said they didn't read as filters. The heavier filter cards were a bit too heavy, and the chips were too small and looked like buttons. I was looking for a happy medium.

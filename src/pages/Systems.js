@@ -4,39 +4,39 @@ import { ExternalLink } from 'lucide-react';
 
 const Systems = () => {
   const architecture = [
-    'Semantic tokens gave teams a shared language for color, type, spacing, states, and accessibility.',
-    'Figma, KendoReact, ThemeBuilder, Storybook, and React Native Paper stayed aligned across web and mobile.',
-    'Frameworks supported the system without becoming the source of truth for the experience.',
-    'Component specs made anatomy, behavior, accessibility, and contribution rules clear.'
+    'Semantic tokens gave teams a shared way to talk about color, type, spacing, component states, and accessibility.',
+    'Figma, KendoReact, ThemeBuilder, and Storybook each held part of the picture. Keeping design and implementation aligned took active work.',
+    'React Native Paper gave the mobile system a starting point. We still had to adapt it to our products and accessibility needs.',
+    'Component specs covered anatomy, behavior, accessibility, and what engineers needed to know.'
   ];
 
   const governance = [
-    'Set clear boundaries for where teams could flex and where consistency mattered.',
-    'Created contribution and review criteria that let teams participate without fragmenting the system.',
-    'Used documentation and critique to build alignment across three merged companies.',
-    'Treated governance as stewardship: useful defaults, examples, and clear decisions.'
+    'Set boundaries for where teams could adjust a pattern and where shared behavior mattered.',
+    'Wrote contribution and review criteria so changes had a path into the shared system instead of becoming one-off UI.',
+    'Worked with teams across the merged companies to document decisions and review patterns.',
+    'Governance gave teams useful defaults and a place to take edge cases.'
   ];
 
   const outcomes = [
-    'Cut development time by up to 50% through reusable patterns and clearer handoff.',
-    'Built a 60+ component KendoReact library with shared interaction standards.',
-    'Made WCAG AA accessibility part of the system foundation.',
-    'Gave product, marketing, and agency teams one source of truth.'
+    'Built reusable KendoReact patterns, including a data grid, and documented how to use them.',
+    'Worked accessibility requirements into design tokens and core component decisions.',
+    'Connected the Figma library, ThemeBuilder, Storybook, and Frontify guidance so teams could check the design and implementation together.',
+    'Gave product, marketing, and agency teams shared components and a place to check how they should work.'
   ];
 
   const craft = [
     'Semantic tokens for color, state, elevation, type, and spacing',
-    'Component specs for anatomy, states, edge cases, accessibility, and engineering',
-    'Contribution guidance for evolving patterns without creating one-off UI',
-    'Frontify documentation connecting design intent to implementation'
+    'Component specs for anatomy, states, edge cases, accessibility, and implementation',
+    'Contribution guidance for evolving shared patterns without creating one-off UI',
+    'Frontify documentation that connected design intent to the implemented theme'
   ];
 
   return (
     <div className="project-detail systems-page container">
       <p className="eyebrow">Design Systems & Governance</p>
-      <h1>Design systems that help teams move together.</h1>
+      <h1>Building a shared design system after a merger.</h1>
       <p className="project-detail-subtitle">
-        How I helped bring three enterprise organizations together through shared patterns, clear governance, and better design-to-development workflows.
+        Wheels, Donlen, and LeasePlan USA came together with different UI histories. I worked on the components, guidance, and handoff that helped teams use a shared system without pretending every product had the same needs.
       </p>
 
       <div className="landing-cta">
@@ -56,7 +56,7 @@ const Systems = () => {
       <section>
         <h2>The problem</h2>
         <p>
-          Wheels, Donlen, and LeasePlan USA came together with different UI histories and ways of working. The challenge was to create shared direction without pretending every team had the same needs.
+          Wheels, Donlen, and LeasePlan USA came together with different components, tools, and ways of working. We needed shared patterns, but the teams still had different product needs. The work was figuring out what belonged in the system and where a product needed room to differ.
         </p>
       </section>
 
@@ -104,7 +104,7 @@ const Systems = () => {
       <section>
         <h2>What I learned</h2>
         <p>
-          The work was never just about the component count. It was about giving teams a shared language and enough trust to move faster without lowering the bar.
+          The component count wasn't the hard part. The hard part was keeping Figma, ThemeBuilder, and Storybook close enough that a design decision could make it into the build. The system still needed work, but the source and the handoff were clearer.
         </p>
       </section>
     </div>

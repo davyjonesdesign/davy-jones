@@ -56,12 +56,12 @@ const About = () => {
       company: 'Wheels, Inc.',
       period: 'Apr 2024 - Present',
       highlights: [
-        'Set UX direction, component architecture, and design system governance across the merged Wheels, Donlen, and LeasePlan USA product ecosystems spanning desktop, web, and mobile surfaces',
-        'Unified three legacy organizations under a single enterprise design language, delivering 60+ production KendoReact components, accessible interaction patterns, and a feature-rich data grid',
-        'Established parity between Figma, ThemeBuilder, and Storybook, eliminating implementation ambiguity and cutting developer turnaround time by up to 50%',
+        'Worked across Wheels, Donlen, and LeasePlan USA after the merger, connecting shared product patterns across web and mobile',
+        'Built KendoReact components, interaction patterns, and a data grid for the shared design system',
+        'Kept Figma, ThemeBuilder, and Storybook aligned so developers had a clearer reference for styling and component behavior',
         'Designed complex multi-step transactional flows and data-dense operational surfaces, including FleetView 4.0, New Driver Experience, Mileage Entry, and Book Appointment',
-        'Embedded WCAG AA accessibility into foundational design tokens and core UI components, ensuring new feature releases remain inclusive by default',
-        'Explored and integrated AI-assisted workflows using GitHub Copilot, Claude Code, Figma MCP, and Lovable for rapid prototyping, documentation generation, and context engineering'
+        'Added WCAG AA accessibility requirements to design tokens and core components so teams had a clear starting point',
+        'Used GitHub Copilot, Claude Code, Figma MCP, and Lovable to inspect prototypes, document decisions, and test where AI helped or made more work'
       ]
     },
     {
@@ -69,10 +69,10 @@ const About = () => {
       company: 'Wheels, Inc.',
       period: 'Aug 2020 - Apr 2024',
       highlights: [
-        'Spearheaded the organization-wide migration to Figma as the primary design tool, establishing token strategies, reusable libraries, and component structures that formed the baseline for the enterprise design system',
-        'Designed end-to-end enterprise interfaces for fleet managers, drivers, and internal operations teams, standardizing contrast, typography, and state behaviors',
-        'Co-designed handoff workflows with UI development principals, producing comprehensive UX specs and QA-aligned documentation that reduced rework and improved release consistency',
-        'Partnered across Marketing Cloud and reporting teams, including Tableau, to extend core system patterns into adjacent digital touchpoints'
+        'Moved the design team to Figma and set up tokens, reusable libraries, and component structures for the design system',
+        'Designed interfaces for fleet managers, drivers, and operations teams, working through contrast, typography, and component states',
+        'Worked with UI development leads on handoff: UX specs, annotations, and documentation for implementation and QA',
+        'Worked with Marketing Cloud email and Tableau reporting teams to adapt shared patterns for those surfaces'
       ]
     },
     {
@@ -96,16 +96,16 @@ const About = () => {
   return (
     <div className="about container">
       <p className="eyebrow">About</p>
-      <h1>I design products, systems, and the way teams work together.</h1>
+      <h1>I work where product UI, design systems, and front-end code meet.</h1>
       <p className="about-subtitle">
-        I am a systems-oriented Senior UI Designer with over six years of enterprise experience making complex workflows easier to understand and build.
+        I'm a senior UI designer at Wheels. Much of my work is figuring out how a design makes it into production: which component fits, what the system says, and what engineering needs to build it.
       </p>
 
       <p>
-        I work across product design, design systems, and engineering collaboration. I care about the details that help a good idea survive contact with production.
+        Figma, ThemeBuilder, Storybook, and the implemented UI don't always tell the same story. I work across those tools, update the system when it falls short, and try to give engineering enough detail to build the intended behavior.
       </p>
       <p>
-        I use tools like GitHub Copilot, Claude Code, Figma MCP, and Lovable to prototype faster, document decisions, and make handoffs clearer. The judgment stays with the team.
+        I use GitHub Copilot, Claude Code, Figma MCP, and Lovable to inspect prototypes and try out workflows. They're good at busywork and getting to a starting point. They still need a person to check the components, behavior, and details.
       </p>
 
       <a
