@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.2562f458.css",
-    "main.js": "/static/js/main.9653d5d4.js",
-    "static/js/453.7b2b088a.chunk.js": "/static/js/453.7b2b088a.chunk.js",
+    "main.css": "/static/css/main.4f351565.css",
+    "main.js": "/static/js/main.e330ca0b.js",
+    "static/js/453.dd0a19d3.chunk.js": "/static/js/453.dd0a19d3.chunk.js",
     "static/media/enterprise-design-systems.svg": "/static/media/enterprise-design-systems.7a8eb00648a1a3b3b0ce9c936e7b28c6.svg",
     "static/media/ai-design-workflow.svg": "/static/media/ai-design-workflow.87d4dff9a7efd47d08bc7aebbb1fb2a9.svg",
     "index.html": "/index.html",
     "static/media/design-to-dev-collab.svg": "/static/media/design-to-dev-collab.27361083187e374edb68573442c419d8.svg",
-    "main.2562f458.css.map": "/static/css/main.2562f458.css.map",
-    "main.9653d5d4.js.map": "/static/js/main.9653d5d4.js.map",
-    "453.7b2b088a.chunk.js.map": "/static/js/453.7b2b088a.chunk.js.map"
+    "main.4f351565.css.map": "/static/css/main.4f351565.css.map",
+    "main.e330ca0b.js.map": "/static/js/main.e330ca0b.js.map",
+    "453.dd0a19d3.chunk.js.map": "/static/js/453.dd0a19d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2562f458.css",
-    "static/js/main.9653d5d4.js"
+    "static/css/main.4f351565.css",
+    "static/js/main.e330ca0b.js"
   ]
 }
