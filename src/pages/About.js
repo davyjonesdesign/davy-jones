@@ -21,6 +21,8 @@ const About = () => {
         'Component Architecture',
         'Design Tokens',
         'Design-to-Development Workflows',
+        'CSS/SCSS Theme Work',
+        'Scoped npm Packages',
         'Web Accessibility (WCAG AA)',
         'KendoReact',
         'Storybook'
@@ -33,6 +35,7 @@ const About = () => {
         'GitHub Copilot',
         'Figma MCP',
         'Lovable',
+        'Figma Make Kit Guidance',
         'AI-Assisted Prototyping',
         'Context Engineering',
         'DesignOps'
@@ -58,7 +61,8 @@ const About = () => {
       highlights: [
         'Worked across Wheels, Donlen, and LeasePlan USA after the merger, connecting shared product patterns across web and mobile',
         'Built KendoReact components, interaction patterns, and a data grid for the shared design system',
-        'Kept Figma, ThemeBuilder, and Storybook aligned so developers had a clearer reference for styling and component behavior',
+        'Maintain the W-UI Figma library and KendoReact theme in ThemeBuilder, checking component behavior and styling against Storybook',
+        'Extended the Figma Make theme with token mappings, Kendo overrides, and custom component styles and examples; prepared the scoped, versioned @w-figma/w-kendo-theme package for distribution',
         'Designed complex multi-step transactional flows and data-dense operational surfaces, including FleetView 4.0, New Driver Experience, Mileage Entry, and Book Appointment',
         'Added WCAG AA accessibility requirements to design tokens and core components so teams had a clear starting point',
         'Used GitHub Copilot, Claude Code, Figma MCP, and Lovable to inspect prototypes, document decisions, and test where AI helped or made more work'
@@ -96,16 +100,16 @@ const About = () => {
   return (
     <div className="about container">
       <p className="eyebrow">About</p>
-      <h1>I work where product UI, design systems, and front-end code meet.</h1>
+      <h1>I work across Figma libraries, UI themes, and the code they guide.</h1>
       <p className="about-subtitle">
-        I'm a senior UI designer at Wheels. Much of my work is figuring out how a design makes it into production: which component fits, what the system says, and what engineering needs to build it.
+        I'm a senior UI designer at Wheels. I maintain the W-UI Figma library and Kendo theme, build shared patterns, and document what engineering and Figma Make can actually use.
       </p>
 
       <p>
-        Figma, ThemeBuilder, Storybook, and the implemented UI don't always tell the same story. I work across those tools, update the system when it falls short, and try to give engineering enough detail to build the intended behavior.
+        Figma, ThemeBuilder, Storybook, and the implemented UI don't always tell the same story. I work across those tools and update the system when it falls short. For Figma Make, reviewed theme output goes into a scoped package with the CSS, fonts, and examples the kit uses. The package provides styles and examples, not React components.
       </p>
       <p>
-        I use GitHub Copilot, Claude Code, Figma MCP, and Lovable to inspect prototypes and try out workflows. They're good at busywork and getting to a starting point. They still need a person to check the components, behavior, and details.
+        I've also been writing kit guidance that maps Figma patterns to the KendoReact packages and APIs that are actually installed. I use GitHub Copilot, Claude Code, Figma MCP, and Lovable on real work; they help with a first pass, but I still check the components, behavior, and details. When the same thing goes wrong twice, I update the system or the guidance.
       </p>
 
       <a

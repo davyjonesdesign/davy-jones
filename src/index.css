@@ -804,21 +804,35 @@ nav {
   color: var(--color-text-secondary);
 }
 
+.skill-group {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) minmax(0, 3fr);
+  align-items: start;
+  gap: var(--spacing-lg);
+  border: 1px solid var(--color-background-secondary);
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.skill-group h3 {
+  margin: 0;
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 .skill-group + .skill-group {
-  margin-top: var(--spacing-2xl);
+  margin-top: var(--spacing-xl);
 }
 
 .skill-item {
-  padding: 0 var(--spacing-sm);
-  border-radius: 999px;
-  background-color: var(--color-hover-background);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 4px;
+  background-color: transparent;
   border: 1px solid var(--color-border);
   color: var(--color-text-secondary);
   font-size: var(--font-size-xs);
@@ -1180,6 +1194,11 @@ nav {
 /* ==================== RESPONSIVE ==================== */
 
 @media (max-width: 640px) {
+  .skill-group {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
   .project-process-timeline {
     gap: var(--spacing-xl);
   }

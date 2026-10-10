@@ -5,7 +5,7 @@ import aiDesignWorkflowIcon from '../assets/ai-design-workflow.svg';
 import designToDevCollabIcon from '../assets/design-to-dev-collab.svg';
 import enterpriseDesignSystemsIcon from '../assets/enterprise-design-systems.svg';
 
-const featuredAliases = ['new-driver-experience-menu', 'fleetview-4-0', 'wheels', 'new-driver-experience'];
+const featuredAliases = ['wheels', 'teaching-figma-agent-design-system', 'fleetview-4-0', 'new-driver-experience'];
 const featuredProjects = featuredAliases
   .map((alias) => portfolioData.find((project) => project.alias === alias))
   .filter(Boolean);
@@ -40,7 +40,7 @@ const Home = () => {
     <div className="landing container">
       <div className="landing-hero">
         <p className="eyebrow">Senior UI Designer at Wheels</p>
-        <h1>I design product interfaces and the systems behind them.</h1>
+        <h1>I work across Figma libraries, UI themes, and the code they guide.</h1>
         <p className="landing-intro">
           A lot of my work sits between Figma and the build: finding the right component, writing down how it behaves, and checking what made it through development.
         </p>
@@ -89,12 +89,12 @@ const Home = () => {
 
         <div aria-labelledby="ai-workflows" className="ai-section highlight-card highlight-card-featured">
           <span className="eyebrow">AI-enabled design practice</span>
-          <h3 id="ai-workflows" className="section-heading">AI supports my process. It does not replace it.</h3>
+          <h3 id="ai-workflows" className="section-heading">AI needs the system details too.</h3>
           <p>
-            I use GitHub Copilot, Claude Code, Lovable, and Figma's tools on real design work. They're useful for a first pass, copying screens, or getting a flow into code. They still guess when a component or guideline is missing, so I check the output and update the system when the same gap keeps showing up.
+            I use GitHub Copilot, Claude Code, Lovable, and Figma's tools on real design work. They can get a first pass into code, but they also guess when a component or guideline is missing. I check the output, then update the system where the same gap keeps showing up. For Figma Make, that means pointing to the KendoReact packages and theme that are actually installed.
           </p>
           <ul className="highlight-tags" aria-label="AI workflow themes">
-            {['Claude', 'GitHub Copilot', 'Lovable', 'VS Code', 'Figma MCP', 'AI DesignOps', 'Rapid prototyping', 'Documentation', 'Context engineering'].map((tag) => <li key={tag}>{tag}</li>)}
+            {['Figma Make', 'Figma agents', 'GitHub Copilot', 'Figma MCP', 'KendoReact', 'ThemeBuilder', 'Lovable', 'Design system guidance'].map((tag) => <li key={tag}>{tag}</li>)}
           </ul>
         </div>
       </section>

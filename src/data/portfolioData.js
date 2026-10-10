@@ -134,7 +134,7 @@ export const portfolioData = [
     results: [
       'The latest pass was closer, but it was not finished. Spacing was still off, inputs kept adding labels, search was in the wrong spot, and the header still had some funky things going on.',
       "Published W-UI Screen Create for the team to use with Figma's agent and asked people to tell me when it did something they didn't like.",
-      'The library updates helped later runs and made the system better for people designing by hand. I carried the same approach into the Figma Make kit, where component guidelines tell the tool what to use instead of letting it invent its own.'
+      'The library updates helped later runs and made the system better for people designing by hand. I carried the same approach into the Figma Make kit, where the guidance points to installed KendoReact components and APIs instead of letting the tool invent its own.'
     ],
 
     tools: [
@@ -290,13 +290,17 @@ export const portfolioData = [
       'Moved the design team to Figma and wrote down how shared components could change',
       'Built KendoReact patterns and worked to keep them aligned with Figma, ThemeBuilder, and Storybook',
       'Adapted React Native Paper patterns for our mobile products and accessibility needs',
-      'Documented the system in Frontify and worked with teams as they started using it'
+      'Documented the system in Frontify and worked with teams as they started using it',
+      'Prepared reviewed theme output for Figma Make as the scoped, versioned @w-figma/w-kendo-theme package, with styles and component examples',
+      'Wrote Make kit guidance that maps Figma patterns to the installed KendoReact packages and their real APIs'
     ],
 
     results: [
       'Gave teams shared components and contribution guidance after the merger',
       'Connected design decisions in Figma to the implemented theme and Storybook',
-      'Worked accessibility needs into tokens and core component patterns'
+      'Worked accessibility needs into tokens and core component patterns',
+      'Added token mappings, Kendo overrides, and custom examples for patterns including taskboard cards, headers, and footers',
+      'Made the package boundary explicit: it provides theme styles and examples, not React component exports'
     ],
 
     discovery: [
@@ -353,7 +357,10 @@ export const portfolioData = [
       'React Native Paper',
       'Kendo ThemeBuilder',
       'Storybook',
-      'Frontify'
+      'Frontify',
+      'Figma Make',
+      'SCSS',
+      'npm package distribution'
     ],
 
     links: [

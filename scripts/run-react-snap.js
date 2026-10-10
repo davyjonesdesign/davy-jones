@@ -55,7 +55,7 @@ async function prerender() {
       page.on('console', () => {});
       page.on('pageerror', () => {});
 
-      await page.goto(`${BASE_URL}${route}`, { waitUntil: 'networkidle0', timeout: 30000 });
+      await page.goto(`${BASE_URL}${route}`, { waitUntil: 'networkidle2', timeout: 30000 });
 
       // Wait for React to mount
       await page.waitForFunction(() => document.getElementById('root')?.children.length > 0, { timeout: 10000 });
@@ -81,7 +81,7 @@ async function prerender() {
 }
 
 prerender().catch((err) => {
-  console.warn('[prerender] Prerender failed; serving CSR build only.');
+  console.warn('[prerender] Prerender incomplete; completed pages remain prerendered.');
   console.warn(err.message);
   process.exit(0);
 });
